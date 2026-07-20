@@ -35,8 +35,12 @@ rng = np.random.default_rng(SEED)
 
 def load_json(path, default):
     if os.path.exists(path):
-        with open(path, "r", encoding="utf-8") as f:
-            return json.load(f)
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except json.JSONDecodeError:
+            print(f"Warning: broken JSON file {path} ignored.")
+            return default
     return default
 
 
