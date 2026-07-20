@@ -29,6 +29,7 @@ RESP_PATH = os.path.join(BASE, "chat_responses.json")
 
 D = 2048
 SEED = 12345
+MIN_RESPONSE_SIM = 0.55
 rng = np.random.default_rng(SEED)
 
 
@@ -109,10 +110,13 @@ def nearest_response(prompt: str):
         return None
     sims = keys_f @ qv
     idx = int(np.argmax(sims))
+    score = float(sims[idx])
+    if score < MIN_RESPONSE_SIM:
+        return None
     resp = load_json(RESP_PATH, [])
     if idx < 0 or idx >= len(resp):
         return None
-    return resp[idx], float(sims[idx])
+    return resp[idx], score
 
 
 def cmd_train_add(args: List[str]):

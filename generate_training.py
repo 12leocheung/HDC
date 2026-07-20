@@ -59,6 +59,18 @@ THANKS = [
     "cheers",
 ]
 
+CONVERSATION = [
+    "how are you",
+    "how are you doing",
+    "how are you doin",
+    "how's it going",
+    "how is it going",
+    "how r u",
+    "what's up",
+    "what's up?",
+    "how are things",
+]
+
 CLOSING = [
     "bye",
     "goodbye",
@@ -71,7 +83,8 @@ RESP = {
     "open_cmd": "Use python chat.py open final or open set to view the images.",
     "ask_help": "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively.",
     "ask_about": "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN.",
-    "thanks": "You\'re welcome!",
+    "conversational": "I'm a chat bot focused on running experiments and answering questions about them.",
+    "thanks": "You're welcome!",
     "closing": "Goodbye!",
 }
 
@@ -122,6 +135,9 @@ for q in ASK_HELP:
 
 for q in ASK_ABOUT:
     pairs.append([q, RESP["ask_about"]])
+
+for q in CONVERSATION:
+    pairs.append([q, RESP["conversational"]])
 
 for t in TECH_Q:
     pairs.append([t, TECH_A[t]])
