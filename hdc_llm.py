@@ -1,338 +1,245 @@
 """
-experiment.py — Can structure buy back what gradients buy?
+experiment4.py — reading out SETS: all, none, and how many.
 
-Task: two-hop inference over an associative memory.
-  Facts:   bind(R1, person_i) -> animal_i      (hop 1: "person's pet")
-           bind(R2, animal_i) -> sound_k       (hop 2: "animal's sound")
-  Query:   given person_i, recover sound_k. No single fact contains the
-           answer; the output of hop 1 must become the key of hop 2.
+Task: each person owns 0-4 pets. Facts bind(R_pet, person) -> pet share ONE
+key, so their traces superpose in the same bucket. A count fact
+bind(R_count, person) -> COUNT_k is also stored for every person.
 
-Conditions (cumulative architecture from this conversation):
-  A flat_raw       one superposed memory; hop-1 output used RAW as hop-2 key
-  B flat_quant     one superposed memory; hop-1 output snapped to the
-                   nearest known item before hop 2 ("return to root")
-  C tree           facts sharded into a 2-level bucket tree; greedy routing
-  D tree_verify    + bind-back verification with backtracking beam search
-  E tree_practice  + LVQ self-quizzing: route every stored key, punish
-                   wrong routes, reward right ones — no gradients
+Methods:
+  threshold   rank pets by similarity, accept above a fixed cutoff theta
+              (tuned once at the smallest N, then frozen — the honest
+              naive baseline)
+  deflate     retrieve top candidate -> VERIFY it is stored -> SUBTRACT its
+              trace from the readout signal -> repeat until verification
+              fails. Emptiness = first candidate already fails.
+  deflate_cal same, but the verification margin is SELF-CALIBRATED per N:
+              quiz known members vs known non-members, put the bar at the
+              midpoint (the learned-margin idea, pull-only supervision
+              from the memory's own contents).
+  deflate_cnt calibrated deflation + read the stored count first; retrieve
+              exactly that many members, cross-checking with verification.
 
-Metric: full-chain accuracy vs N (total stored facts), D fixed at 2048.
+Metrics vs N: exact-set accuracy (persons with >=1 pet) and correct-empty
+rate (persons with 0 pets).
 """
 
 from __future__ import annotations
 
 import numpy as np
 
-D = 2048
-N_SOUNDS = 50
-LEAF_SIZE = 32          # target facts per leaf bucket
-N_EVAL = 200            # queries sampled per condition
-PRACTICE_EPOCHS = 10
-VERIFY_MARGIN = 0.5     # accept if bind-back score > margin * expected signal
-SEED = 7
+from experiment import D, cleanup, normalize_rows
+from experiment3 import rand_vecs, LSHMem
+
+rng = np.random.default_rng(31)
+MAX_SET = 6
 
 
-def rand_vec(rng, n=1):
-    v = rng.choice(np.array([-1, 1], dtype=np.int8), size=(n, D))
-    return v[0] if n == 1 else v
+def build_world(n_persons):
+    persons = rand_vecs(n_persons)
+    pets = rand_vecs(n_persons)          # pet inventory, random IDs
+    counts = rand_vecs(5)                # COUNT_0 .. COUNT_4 symbols
+    R_pet, R_count = rand_vecs(2)
+
+    sizes = rng.choice([0, 1, 2, 3, 4], size=n_persons,
+                       p=[0.20, 0.25, 0.25, 0.20, 0.10])
+    owns = [rng.choice(n_persons, size=k, replace=False) for k in sizes]
+
+    keys, vals = [], []
+    for p in range(n_persons):
+        k_pet = (R_pet * persons[p]).astype(np.int8)
+        for pet in owns[p]:
+            keys.append(k_pet)
+            vals.append(pets[pet])
+        keys.append((R_count * persons[p]).astype(np.int8))
+        vals.append(counts[sizes[p]])
+    keys, vals = np.array(keys), np.array(vals)
+    mem = LSHMem(keys, vals)
+    M_flat = np.sum(keys.astype(np.int64) * vals.astype(np.int64), axis=0)
+    return dict(persons=persons, pets=pets, pets_f=normalize_rows(pets),
+                counts=counts, counts_f=normalize_rows(counts),
+                R_pet=R_pet, R_count=R_count, sizes=sizes, owns=owns,
+                mem=mem, M_flat=M_flat)
 
 
-def cos(a, b):
-    a = a.astype(np.float64); b = b.astype(np.float64)
-    na, nb = np.linalg.norm(a), np.linalg.norm(b)
-    return float(a @ b) / (na * nb) if na and nb else 0.0
+def verify_score(mem, leaf, working, key, cand_vec):
+    trace = key.astype(np.float64) * cand_vec.astype(np.float64)
+    norm = np.linalg.norm(working.astype(np.float64))
+    return float(working @ trace) / (norm * np.sqrt(D)) if norm else 0.0
 
 
-def normalize_rows(M):
-    M = M.astype(np.float32)
-    n = np.linalg.norm(M, axis=1, keepdims=True)
-    return np.divide(M, n, out=np.zeros_like(M), where=n > 0)
-
-
-def sims_to(normed_M, v):
-    v = v.astype(np.float32)
-    nv = np.linalg.norm(v)
-    return (normed_M @ v) / nv if nv else np.zeros(normed_M.shape[0], dtype=np.float32)
-
-
-class World:
-    """Random entities + the two-hop fact set."""
-
-    def __init__(self, n_pairs: int, rng):
-        self.rng = rng
-        self.R1, self.R2 = rand_vec(rng), rand_vec(rng)
-        self.persons = rand_vec(rng, n_pairs)
-        self.animals = rand_vec(rng, n_pairs)
-        self.sounds = rand_vec(rng, N_SOUNDS)
-        self.animal_sound = rng.integers(0, N_SOUNDS, size=n_pairs)
-        self.animals_f = normalize_rows(self.animals)
-        self.sounds_f = normalize_rows(self.sounds)
-
-        # keys/values for every stored fact (2 * n_pairs facts total)
-        k1 = (self.R1[None, :] * self.persons).astype(np.int8)
-        k2 = (self.R2[None, :] * self.animals).astype(np.int8)
-        self.keys = np.vstack([k1, k2])
-        self.vals = np.vstack([self.animals, self.sounds[self.animal_sound]])
-        self.n_pairs = n_pairs
-
-
-# ----------------------------------------------------------------------
-# Memories
-# ----------------------------------------------------------------------
-class FlatMemory:
-    def __init__(self, world: World):
-        self.M = np.sum(world.keys.astype(np.int64) * world.vals.astype(np.int64), axis=0)
-
-    def unbind(self, key):
-        return self.M * key.astype(np.int64)
-
-
-class TreeMemory:
-    """Two-level bucket tree. Facts randomly sharded into leaves; each node's
-    address is the thresholded bundle of the keys stored beneath it."""
-
-    def __init__(self, world: World, rng):
-        n_facts = world.keys.shape[0]
-        self.n_leaves = max(1, int(np.ceil(n_facts / LEAF_SIZE)))
-        self.branch = max(2, int(np.ceil(np.sqrt(self.n_leaves))))
-        self.n_leaves = self.branch ** 2  # full 2-level tree
-
-        self.leaf_of = rng.integers(0, self.n_leaves, size=n_facts)
-        self.leaf_M = np.zeros((self.n_leaves, D), dtype=np.int64)
-        self.leaf_addr_acc = np.zeros((self.n_leaves, D), dtype=np.float64)
-        self.leaf_facts: list[list[int]] = [[] for _ in range(self.n_leaves)]
-        for f in range(n_facts):
-            leaf = self.leaf_of[f]
-            self.leaf_M[leaf] += world.keys[f].astype(np.int64) * world.vals[f].astype(np.int64)
-            self.leaf_addr_acc[leaf] += world.keys[f]
-            self.leaf_facts[leaf].append(f)
-
-        # level-1 nodes: leaf i belongs to node i // branch
-        self.node_addr_acc = np.zeros((self.branch, D), dtype=np.float64)
-        for leaf in range(self.n_leaves):
-            self.node_addr_acc[leaf // self.branch] += self.leaf_addr_acc[leaf]
-        self.leaf_M_norm = np.linalg.norm(self.leaf_M.astype(np.float64), axis=1)
-        self._refresh()
-
-    def _refresh(self):
-        self.node_addr = normalize_rows(np.sign(self.node_addr_acc))
-        self.leaf_addr = normalize_rows(np.sign(self.leaf_addr_acc))
-
-    def route(self, key, beam=1):
-        """Return leaf ids, best-first, exploring `beam` branches per level."""
-        node_sims = sims_to(self.node_addr, key)
-        nodes = np.argsort(node_sims)[::-1][:beam]
-        leaves = []
-        for nd in nodes:
-            child_ids = np.arange(nd * self.branch, (nd + 1) * self.branch)
-            child_sims = sims_to(self.leaf_addr[child_ids], key)
-            for c in np.argsort(child_sims)[::-1][:beam]:
-                leaves.append(int(child_ids[c]))
-        return leaves
-
-    def unbind(self, leaf, key):
-        return self.leaf_M[leaf] * key.astype(np.int64)
-
-    def verify(self, leaf, key, val) -> bool:
-        """Bind-back check: is bind(key, val) actually present in this leaf?"""
-        trace = (key.astype(np.float32) * val.astype(np.float32))
-        n_facts = max(1, len(self.leaf_facts[leaf]))
-        denom = self.leaf_M_norm[leaf] * np.sqrt(D)
-        score = float(self.leaf_M[leaf] @ trace) / denom if denom else 0.0
-        expected = 1.0 / np.sqrt(n_facts)   # signal size if present
-        return score > VERIFY_MARGIN * expected
-
-    def practice(self, world: World, epochs: int, eta: float = 1.0):
-        """LVQ self-quiz: every stored key must route to its own leaf.
-        Wrong route -> push wrong addresses away, pull correct ones closer.
-        Vectorized: one routing pass per epoch is two matmuls."""
-        keys_f = world.keys.astype(np.float32)
-        true_leaf = self.leaf_of
-        for _ in range(epochs):
-            got_node = np.argmax(keys_f @ self.node_addr.T, axis=1)
-            # greedy leaf within the chosen node
-            leaf_sims = keys_f @ self.leaf_addr.T          # (F, n_leaves)
-            got_leaf = np.empty(len(keys_f), dtype=np.int64)
-            for nd in range(self.branch):
-                mask = got_node == nd
-                if mask.any():
-                    block = leaf_sims[mask][:, nd * self.branch:(nd + 1) * self.branch]
-                    got_leaf[mask] = nd * self.branch + np.argmax(block, axis=1)
-            wrong = np.nonzero(got_leaf != true_leaf)[0]
-            if len(wrong) == 0:
-                break
-            for f in wrong:
-                key = world.keys[f]
-                tl = int(true_leaf[f])
-                # PULL-ONLY: reinforce the correct path, never punish the
-                # wrong one — punishment corrupts the wrong bucket's address
-                # for its own members (stability-plasticity failure, observed
-                # empirically in the +/- variant of this update).
-                self.leaf_addr_acc[tl] += eta * key
-                self.node_addr_acc[tl // self.branch] += eta * key
-            self._refresh()
-
-
-class LSHMemory:
-    """Content-addressed bucketing: leaf index = sign bits of the key
-    projected on fixed random hyperplanes. No stored addresses, so routing
-    cannot degrade with N — the query COMPUTES its bucket. Exact keys
-    (guaranteed by quantized restarts between hops) route perfectly."""
-
-    def __init__(self, world: World, rng):
-        n_facts = world.keys.shape[0]
-        self.bits = max(1, int(np.ceil(np.log2(max(2, n_facts / LEAF_SIZE)))))
-        self.H = rng.choice(np.array([-1, 1], dtype=np.int8),
-                            size=(self.bits, D)).astype(np.float32)
-        self.n_leaves = 2 ** self.bits
-        self.leaf_M = np.zeros((self.n_leaves, D), dtype=np.int64)
-        self.leaf_count = np.zeros(self.n_leaves, dtype=np.int64)
-        for f in range(n_facts):
-            leaf = self._hash(world.keys[f])
-            self.leaf_M[leaf] += world.keys[f].astype(np.int64) * world.vals[f].astype(np.int64)
-            self.leaf_count[leaf] += 1
-        self.leaf_M_norm = np.linalg.norm(self.leaf_M.astype(np.float64), axis=1)
-
-    def _hash(self, key) -> int:
-        bits = (self.H @ key.astype(np.float32)) > 0
-        return int(np.dot(bits, 1 << np.arange(self.bits)))
-
-    def unbind(self, leaf, key):
-        return self.leaf_M[leaf] * key.astype(np.int64)
-
-    def verify(self, leaf, key, val) -> bool:
-        trace = key.astype(np.float32) * val.astype(np.float32)
-        denom = self.leaf_M_norm[leaf] * np.sqrt(D)
-        score = float(self.leaf_M[leaf] @ trace) / denom if denom else 0.0
-        expected = 1.0 / np.sqrt(max(1, self.leaf_count[leaf]))
-        return score > VERIFY_MARGIN * expected
-
-
-def lsh_hop(mem, key, items_f, items_raw):
+def deflate_readout(w, person_id, margin):
+    """Retrieve-verify-subtract loop. Returns the set of pet ids."""
+    key = (w["R_pet"] * w["persons"][person_id]).astype(np.int8)
+    mem = w["mem"]
     leaf = mem._hash(key)
-    noisy = mem.unbind(leaf, key)
-    for cand in cleanup(noisy, items_f, top=2):
-        if mem.verify(leaf, key, items_raw[cand]):
-            return cand
-    return cleanup(noisy, items_f)[0]
+    working = mem.leaf_M[leaf].copy()
+    found = set()
+    for _ in range(MAX_SET):
+        noisy = working * key.astype(np.int64)
+        cand = int(cleanup(noisy, w["pets_f"])[0])
+        if cand in found:
+            break
+        if verify_score(mem, leaf, working, key, w["pets"][cand]) < margin:
+            break                       # stopping rule: next candidate not real
+        found.add(cand)
+        working -= key.astype(np.int64) * w["pets"][cand].astype(np.int64)
+    return found
 
 
-def run_lsh(world, mem, queries):
-    correct = 0
-    for p in queries:
-        k1 = (world.R1 * world.persons[p]).astype(np.int8)
-        a = lsh_hop(mem, k1, world.animals_f, world.animals)
-        k2 = (world.R2 * world.animals[a]).astype(np.int8)   # quantized restart
-        s = lsh_hop(mem, k2, world.sounds_f, world.sounds)
-        correct += (s == world.animal_sound[p])
-    return correct / len(queries)
+def read_count(w, person_id, margin):
+    key = (w["R_count"] * w["persons"][person_id]).astype(np.int8)
+    mem = w["mem"]
+    leaf = mem._hash(key)
+    working = mem.leaf_M[leaf]
+    noisy = working * key.astype(np.int64)
+    cand = int(cleanup(noisy, w["counts_f"])[0])
+    if verify_score(mem, leaf, working, key, w["counts"][cand]) < margin:
+        return None
+    return cand
 
 
-# ----------------------------------------------------------------------
-# Retrieval procedures per condition
-# ----------------------------------------------------------------------
-def cleanup(noisy, items_f, top=1):
-    sims = sims_to(items_f, noisy)
-    return np.argsort(sims)[::-1][:top]
+def calibrate_margin(w, n_quiz=300):
+    """Self-quiz calibration, done right on the third attempt.
+    v1 midpoint-of-means: bar inside the negative tail -> leaks (0.83).
+    v2 random-non-member quantile: WRONG DISTRIBUTION -> collapse (0.00).
+       Deflation never tests a random candidate; it tests the argmax
+       candidate — the best impostor out of the whole inventory, whose
+       scores are max-order statistics, far above random draws.
+    v3 (this): simulate the operating condition. Subtract the true members,
+    run the actual selection on the residual, record what the surviving
+    top impostor scores. Bar sits between the impostor tail and the
+    member floor."""
+    mem = w["mem"]
+    member_scores, neg_scores = [], []
+    persons_all = np.arange(len(w["sizes"]))
+    for p in rng.choice(persons_all, size=min(n_quiz, len(persons_all)),
+                        replace=False):
+        key = (w["R_pet"] * w["persons"][int(p)]).astype(np.int8)
+        leaf = mem._hash(key)
+        working = mem.leaf_M[leaf].copy()
+        for pet in w["owns"][int(p)]:
+            member_scores.append(
+                verify_score(mem, leaf, working, key, w["pets"][pet]))
+        # remove ground truth, then see what the selector digs up
+        for pet in w["owns"][int(p)]:
+            working -= key.astype(np.int64) * w["pets"][pet].astype(np.int64)
+        noisy = working * key.astype(np.int64)
+        cand = int(cleanup(noisy, w["pets_f"])[0])
+        neg_scores.append(verify_score(mem, leaf, working, key, w["pets"][cand]))
+    lo = float(np.quantile(neg_scores, 0.99))
+    hi = float(np.quantile(member_scores, 0.10)) if member_scores else lo * 2
+    return (lo + hi) / 2
 
 
-def run_flat(world, mem, quantize: bool, queries):
-    correct = 0
-    for p in queries:
-        k1 = world.R1 * world.persons[p]
-        noisy_animal = mem.unbind(k1)
-        if quantize:
-            a = cleanup(noisy_animal, world.animals_f)[0]
-            hop2_carrier = world.animals[a].astype(np.int64)
-        else:
-            hop2_carrier = noisy_animal  # raw smudge feeds hop 2
-        k2 = world.R2.astype(np.int64) * hop2_carrier
-        noisy_sound = mem.unbind(np.sign(k2).astype(np.int8))
-        s = cleanup(noisy_sound, world.sounds_f)[0]
-        correct += (s == world.animal_sound[p])
-    return correct / len(queries)
+def flat_threshold_readout(w, person_id, theta):
+    """The pre-architecture baseline: one flat superposition, fixed cutoff."""
+    key = (w["R_pet"] * w["persons"][person_id]).astype(np.int64)
+    nf = (w["M_flat"] * key).astype(np.float32)
+    nrm = np.linalg.norm(nf)
+    sims = (w["pets_f"] @ nf / nrm) if nrm else np.zeros(len(w["pets"]))
+    return set(np.nonzero(sims > theta)[0].tolist())
 
 
-def tree_hop(world, tree, key, items_f, items_raw, use_verify: bool):
-    """One hop through the tree. Returns best item id."""
-    beam = 2 if use_verify else 1
-    leaves = tree.route(key, beam=beam)
-    if not use_verify:
-        return cleanup(tree.unbind(leaves[0], key), items_f)[0]
-    for leaf in leaves:
-        noisy = tree.unbind(leaf, key)
-        for cand in cleanup(noisy, items_f, top=2):
-            if tree.verify(leaf, key, items_raw[cand]):
-                return cand
-    return cleanup(tree.unbind(leaves[0], key), items_f)[0]  # unverified fallback
+def threshold_readout(w, person_id, theta):
+    key = (w["R_pet"] * w["persons"][person_id]).astype(np.int8)
+    mem = w["mem"]
+    leaf = mem._hash(key)
+    noisy = mem.leaf_M[leaf] * key.astype(np.int64)
+    nf = noisy.astype(np.float32)
+    nrm = np.linalg.norm(nf)
+    sims = (w["pets_f"] @ nf / nrm) if nrm else np.zeros(len(w["pets"]))
+    return set(np.nonzero(sims > theta)[0].tolist())
 
 
-def run_tree(world, tree, use_verify: bool, queries):
-    correct = 0
-    for p in queries:
-        k1 = (world.R1 * world.persons[p]).astype(np.int8)
-        a = tree_hop(world, tree, k1, world.animals_f, world.animals, use_verify)
-        k2 = (world.R2 * world.animals[a]).astype(np.int8)   # quantized restart
-        s = tree_hop(world, tree, k2, world.sounds_f, world.sounds, use_verify)
-        correct += (s == world.animal_sound[p])
-    return correct / len(queries)
+def evaluate(w, method, param):
+    with_pets = [p for p in range(len(w["sizes"])) if w["sizes"][p] > 0]
+    without = [p for p in range(len(w["sizes"])) if w["sizes"][p] == 0]
+    eval_with = rng.choice(with_pets, size=min(150, len(with_pets)), replace=False)
+    eval_without = rng.choice(without, size=min(75, len(without)), replace=False)
+
+    def get_set(p):
+        if method == "flat_threshold":
+            return flat_threshold_readout(w, p, param)
+        if method == "threshold":
+            return threshold_readout(w, p, param)
+        if method in ("deflate", "deflate_cal"):
+            return deflate_readout(w, p, param)
+        if method == "deflate_cnt":
+            margin = param
+            cnt = read_count(w, p, margin)
+            if cnt == 0:
+                return set()
+            found = deflate_readout(w, p, margin)
+            if cnt is not None and len(found) > cnt:
+                found = set(list(found)[:cnt])
+            return found
+
+    exact = float(np.mean([get_set(p) == set(w["owns"][p].tolist())
+                           for p in eval_with]))
+    empty = float(np.mean([get_set(p) == set() for p in eval_without]))
+    return exact, empty
 
 
-# ----------------------------------------------------------------------
 def main():
-    rng = np.random.default_rng(SEED)
-    Ns = [100, 300, 1000, 3000, 10000]
-    results = {c: [] for c in ["flat_raw", "flat_quant", "tree",
-                               "tree_verify", "tree_practice", "content_tree"]}
+    n_persons_sweep = [300, 1000, 3000, 6000, 20000]
+    methods = ["flat_threshold", "threshold", "deflate", "deflate_cal", "deflate_cnt"]
+    res = {m: {"exact": [], "empty": [], "N": []} for m in methods}
 
-    for N in Ns:
-        n_pairs = N // 2
-        world = World(n_pairs, rng)
-        queries = rng.integers(0, n_pairs, size=min(N_EVAL, n_pairs))
+    # tune theta once at the smallest N, then freeze
+    w0 = build_world(n_persons_sweep[0])
+    best_theta, best = 0.3, -1
+    best_ftheta, fbest = 0.3, -1
+    for theta in np.arange(0.05, 0.61, 0.05):
+        e, z = evaluate(w0, "threshold", theta)
+        if e + z > best:
+            best, best_theta = e + z, float(theta)
+        e, z = evaluate(w0, "flat_threshold", theta)
+        if e + z > fbest:
+            fbest, best_ftheta = e + z, float(theta)
+    print(f"theta tuned once: bucketed={best_theta:.2f} flat={best_ftheta:.2f}")
 
-        flat = FlatMemory(world)
-        results["flat_raw"].append(run_flat(world, flat, False, queries))
-        results["flat_quant"].append(run_flat(world, flat, True, queries))
+    FIXED_MARGIN = 0.10
+    for n_persons in n_persons_sweep:
+        w = build_world(n_persons)
+        N = sum(w["sizes"]) + n_persons
+        cal = calibrate_margin(w)
+        for m, param in [("flat_threshold", best_ftheta),
+                         ("threshold", best_theta), ("deflate", FIXED_MARGIN),
+                         ("deflate_cal", cal), ("deflate_cnt", cal)]:
+            exact, empty = evaluate(w, m, param)
+            res[m]["exact"].append(exact)
+            res[m]["empty"].append(empty)
+            res[m]["N"].append(N)
+        print(f"N={N:6d} (cal margin {cal:.3f})  " + "  ".join(
+            f"{m}: set={res[m]['exact'][-1]:.2f}/none={res[m]['empty'][-1]:.2f}"
+            for m in methods))
 
-        tree = TreeMemory(world, rng)
-        results["tree"].append(run_tree(world, tree, False, queries))
-        results["tree_verify"].append(run_tree(world, tree, True, queries))
-
-        tree.practice(world, PRACTICE_EPOCHS)
-        results["tree_practice"].append(run_tree(world, tree, True, queries))
-
-        lsh = LSHMemory(world, rng)
-        results["content_tree"].append(run_lsh(world, lsh, queries))
-
-        print(f"N={N:6d}  " + "  ".join(
-            f"{c}={results[c][-1]:.2f}" for c in results))
-
-    # ------------------------------------------------------------------
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
 
-    labels = {
-        "flat_raw": "flat, raw chaining",
-        "flat_quant": "flat + quantize between hops",
-        "tree": "bucket tree",
-        "tree_verify": "tree + verify/backtrack",
-        "tree_practice": "tree + verify + practice (LVQ, pull-only)",
-        "content_tree": "content-addressed buckets (LSH) + verify",
-    }
-    plt.figure(figsize=(8, 5))
-    for c, accs in results.items():
-        plt.plot(Ns, accs, marker="o", label=labels[c])
-    plt.xscale("log")
-    plt.xlabel("N — total stored facts (D fixed at 2048)")
-    plt.ylabel("two-hop chain accuracy")
-    plt.title("Can structure buy back what gradients buy?")
-    plt.ylim(-0.05, 1.05)
-    plt.grid(alpha=0.3)
-    plt.legend()
+    labels = {"flat_threshold": "flat memory + threshold (pre-architecture)",
+              "threshold": "fixed threshold",
+              "deflate": "deflation + verify (fixed margin)",
+              "deflate_cal": "deflation + self-calibrated margin",
+              "deflate_cnt": "deflation + stored count"}
+    fig, axes = plt.subplots(1, 2, figsize=(12, 4.6))
+    for i, metric in enumerate(["exact", "empty"]):
+        ax = axes[i]
+        for m in methods:
+            ax.plot(res[m]["N"], res[m][metric], marker="o", label=labels[m])
+        ax.set_xscale("log")
+        ax.set_xlabel("N — total stored facts")
+        ax.set_ylabel("exact-set accuracy" if metric == "exact"
+                      else "correct \u2018none\u2019 rate")
+        ax.set_title("\u201cName ALL of Leo\u2019s pets\u201d" if metric == "exact"
+                     else "\u201cDoes Leo have any pets?\u201d \u2192 no")
+        ax.set_ylim(-0.05, 1.05)
+        ax.grid(alpha=0.3)
+    axes[0].legend()
     plt.tight_layout()
-    plt.savefig("two_hop_results.png", dpi=150)
-    print("\nSaved two_hop_results.png")
+    plt.savefig("set_readout.png", dpi=150)
+    print("\nSaved set_readout.png")
 
 
 if __name__ == "__main__":
