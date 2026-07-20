@@ -79,7 +79,12 @@ def deflate_readout(w, person_id, margin):
         cand = int(cleanup(noisy, w["pets_f"])[0])
         if cand in found:
             break
-        if verify_score(mem, leaf, working, key, w["pets"][cand]) < margin:
+        # support per-leaf margin dict or scalar
+        if isinstance(margin, dict):
+            m = margin.get(leaf, margin.get("_global", 0.1))
+        else:
+            m = margin
+        if verify_score(mem, leaf, working, key, w["pets"][cand]) < m:
             break                       # stopping rule: next candidate not real
         found.add(cand)
         working -= key.astype(np.int64) * w["pets"][cand].astype(np.int64)
@@ -93,7 +98,11 @@ def read_count(w, person_id, margin):
     working = mem.leaf_M[leaf]
     noisy = working * key.astype(np.int64)
     cand = int(cleanup(noisy, w["counts_f"])[0])
-    if verify_score(mem, leaf, working, key, w["counts"][cand]) < margin:
+    if isinstance(margin, dict):
+        m = margin.get(leaf, margin.get("_global", 0.1))
+    else:
+        m = margin
+    if verify_score(mem, leaf, working, key, w["counts"][cand]) < m:
         return None
     return cand
 
@@ -110,25 +119,42 @@ def calibrate_margin(w, n_quiz=300):
     top impostor scores. Bar sits between the impostor tail and the
     member floor."""
     mem = w["mem"]
-    member_scores, neg_scores = [], []
+    # Per-leaf calibration: collect member / impostor top scores per leaf
+    leaf_member = {}
+    leaf_neg = {}
     persons_all = np.arange(len(w["sizes"]))
-    for p in rng.choice(persons_all, size=min(n_quiz, len(persons_all)),
-                        replace=False):
+    sampled = rng.choice(persons_all, size=min(n_quiz, len(persons_all)),
+                         replace=False)
+    for p in sampled:
         key = (w["R_pet"] * w["persons"][int(p)]).astype(np.int8)
         leaf = mem._hash(key)
         working = mem.leaf_M[leaf].copy()
+        # record true-member scores on the intact working signal
         for pet in w["owns"][int(p)]:
-            member_scores.append(
+            leaf_member.setdefault(leaf, []).append(
                 verify_score(mem, leaf, working, key, w["pets"][pet]))
         # remove ground truth, then see what the selector digs up
         for pet in w["owns"][int(p)]:
             working -= key.astype(np.int64) * w["pets"][pet].astype(np.int64)
         noisy = working * key.astype(np.int64)
         cand = int(cleanup(noisy, w["pets_f"])[0])
-        neg_scores.append(verify_score(mem, leaf, working, key, w["pets"][cand]))
-    lo = float(np.quantile(neg_scores, 0.99))
-    hi = float(np.quantile(member_scores, 0.10)) if member_scores else lo * 2
-    return (lo + hi) / 2
+        leaf_neg.setdefault(leaf, []).append(
+            verify_score(mem, leaf, working, key, w["pets"][cand]))
+
+    per_leaf_margin = {}
+    margins = []
+    for leaf, neg_scores in leaf_neg.items():
+        member_scores = leaf_member.get(leaf, [])
+        lo = float(np.quantile(neg_scores, 0.99)) if neg_scores else 0.0
+        hi = float(np.quantile(member_scores, 0.10)) if member_scores else lo * 2
+        m = (lo + hi) / 2
+        per_leaf_margin[leaf] = m
+        margins.append(m)
+
+    # global fallback margin for unseen leaves
+    global_margin = float(np.median(margins)) if margins else 0.1
+    per_leaf_margin["_global"] = global_margin
+    return per_leaf_margin
 
 
 def flat_threshold_readout(w, person_id, theta):
@@ -210,7 +236,8 @@ def main():
             res[m]["exact"].append(exact)
             res[m]["empty"].append(empty)
             res[m]["N"].append(N)
-        print(f"N={N:6d} (cal margin {cal:.3f})  " + "  ".join(
+        cal_val = cal.get("_global", cal) if isinstance(cal, dict) else cal
+        print(f"N={N:6d} (cal margin {cal_val:.3f})  " + "  ".join(
             f"{m}: set={res[m]['exact'][-1]:.2f}/none={res[m]['empty'][-1]:.2f}"
             for m in methods))
 

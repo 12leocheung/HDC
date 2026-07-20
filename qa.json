@@ -1,0 +1,4002 @@
+[
+  [
+    "hello!",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Hello",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hi",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hi!",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Hey",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hey!",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good morning",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good morning!",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good afternoon!",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Good afternoon",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "yo",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "yo!",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "howdy!",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "howdy",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "can you run experiment3",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment3",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment3 please",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you run experiment 3",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment 3 please",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment 3",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "execute experiment3 please",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you execute experiment3",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "execute experiment3",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "start panel tests",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run the panels",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you launch experiment3",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "launch experiment3",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "launch experiment3 please",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "open final image",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "show final_fixes.png",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "open set readout",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "display set_readout.png",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "how do i run the experiments",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "how to run experiment3",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "what command runs experiment4",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "how do I generate the plots",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "what does panel1 test",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "explain panel 2",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "what is panel3 about",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "describe the entry snap experiment",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "what is LSH",
+    "LSH (Locality-Sensitive Hashing) hashes similar vectors into the same buckets for fast approximate nearest neighbor."
+  ],
+  [
+    "explain LSH briefly",
+    "LSH uses random hyperplanes to map high-dim vectors to bucket indices where similar vectors collide."
+  ],
+  [
+    "how does deflation work",
+    "Deflation retrieves a top candidate, verifies it, subtracts its trace from the signal, and repeats."
+  ],
+  [
+    "what is quantized restart",
+    "Quantized restart snaps the noisy hop output to the nearest known item before the next hop."
+  ],
+  [
+    "thanks",
+    "You're welcome!"
+  ],
+  [
+    "thank you",
+    "You're welcome!"
+  ],
+  [
+    "thx",
+    "You're welcome!"
+  ],
+  [
+    "cheers",
+    "You're welcome!"
+  ],
+  [
+    "bye",
+    "Goodbye!"
+  ],
+  [
+    "goodbye",
+    "Goodbye!"
+  ],
+  [
+    "see ya",
+    "Goodbye!"
+  ],
+  [
+    "how do i LSH",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "how to per-leaf margin",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "how do i experiment3",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "explain LSH",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "tell me about final_fixes.png",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "tell me about orthogonal ids",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i quantized restart",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "what is orthogonal ids",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "what is deflation",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how do i adaptive probe",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "explain experiment3",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "explain deflation",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "tell me about adaptive probe",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "how do i final_fixes.png",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "how to orthogonal ids",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i experiment4",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "tell me about per-leaf margin",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "explain orthogonal ids",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i per-leaf margin",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "what is final_fixes.png",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "how to experiment4",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "what is per-leaf margin",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "explain set_readout.png",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "explain experiment4",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "how to quantized restart",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "how do i deflation",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how to set_readout.png",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "what is experiment3",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "tell me about deflation",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how to adaptive probe",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "tell me about experiment3",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "tell me about quantized restart",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "tell me about experiment4",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "how to experiment3",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "what is set_readout.png",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "explain final_fixes.png",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "explain quantized restart",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "how to deflation",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "tell me about LSH",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "explain per-leaf margin",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "tell me about set_readout.png",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "how to final_fixes.png",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "what is experiment4",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "explain adaptive probe",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "how do i orthogonal ids",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i set_readout.png",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "how to LSH",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "what is adaptive probe",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "hello! (variant 0)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Hello (variant 1)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hi (variant 2)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hi! (variant 3)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Hey (variant 4)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hey! (variant 5)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good morning (variant 6)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good morning! (variant 7)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good afternoon! (variant 8)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Good afternoon (variant 9)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "yo (variant 10)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "yo! (variant 11)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "howdy! (variant 12)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "howdy (variant 13)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "can you run experiment3 (variant 14)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment3 (variant 15)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment3 please (variant 16)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you run experiment 3 (variant 17)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment 3 please (variant 18)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment 3 (variant 19)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "execute experiment3 please (variant 20)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you execute experiment3 (variant 21)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "execute experiment3 (variant 22)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "start panel tests (variant 23)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run the panels (variant 24)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you launch experiment3 (variant 25)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "launch experiment3 (variant 26)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "launch experiment3 please (variant 27)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "open final image (variant 28)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "show final_fixes.png (variant 29)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "open set readout (variant 30)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "display set_readout.png (variant 31)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "how do i run the experiments (variant 32)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "how to run experiment3 (variant 33)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "what command runs experiment4 (variant 34)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "how do I generate the plots (variant 35)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "what does panel1 test (variant 36)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "explain panel 2 (variant 37)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "what is panel3 about (variant 38)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "describe the entry snap experiment (variant 39)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "what is LSH (variant 40)",
+    "LSH (Locality-Sensitive Hashing) hashes similar vectors into the same buckets for fast approximate nearest neighbor."
+  ],
+  [
+    "explain LSH briefly (variant 41)",
+    "LSH uses random hyperplanes to map high-dim vectors to bucket indices where similar vectors collide."
+  ],
+  [
+    "how does deflation work (variant 42)",
+    "Deflation retrieves a top candidate, verifies it, subtracts its trace from the signal, and repeats."
+  ],
+  [
+    "what is quantized restart (variant 43)",
+    "Quantized restart snaps the noisy hop output to the nearest known item before the next hop."
+  ],
+  [
+    "thanks (variant 44)",
+    "You're welcome!"
+  ],
+  [
+    "thank you (variant 45)",
+    "You're welcome!"
+  ],
+  [
+    "thx (variant 46)",
+    "You're welcome!"
+  ],
+  [
+    "cheers (variant 47)",
+    "You're welcome!"
+  ],
+  [
+    "bye (variant 48)",
+    "Goodbye!"
+  ],
+  [
+    "goodbye (variant 49)",
+    "Goodbye!"
+  ],
+  [
+    "see ya (variant 50)",
+    "Goodbye!"
+  ],
+  [
+    "how do i LSH (variant 51)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "how to per-leaf margin (variant 52)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "how do i experiment3 (variant 53)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "explain LSH (variant 54)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "tell me about final_fixes.png (variant 55)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "tell me about orthogonal ids (variant 56)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i quantized restart (variant 57)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "what is orthogonal ids (variant 58)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "what is deflation (variant 59)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how do i adaptive probe (variant 60)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "explain experiment3 (variant 61)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "explain deflation (variant 62)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "tell me about adaptive probe (variant 63)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "how do i final_fixes.png (variant 64)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "how to orthogonal ids (variant 65)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i experiment4 (variant 66)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "tell me about per-leaf margin (variant 67)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "explain orthogonal ids (variant 68)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i per-leaf margin (variant 69)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "what is final_fixes.png (variant 70)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "how to experiment4 (variant 71)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "what is per-leaf margin (variant 72)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "explain set_readout.png (variant 73)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "explain experiment4 (variant 74)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "how to quantized restart (variant 75)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "how do i deflation (variant 76)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how to set_readout.png (variant 77)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "what is experiment3 (variant 78)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "tell me about deflation (variant 79)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how to adaptive probe (variant 80)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "tell me about experiment3 (variant 81)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "tell me about quantized restart (variant 82)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "tell me about experiment4 (variant 83)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "how to experiment3 (variant 84)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "what is set_readout.png (variant 85)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "explain final_fixes.png (variant 86)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "explain quantized restart (variant 87)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "how to deflation (variant 88)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "tell me about LSH (variant 89)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "explain per-leaf margin (variant 90)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "tell me about set_readout.png (variant 91)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "how to final_fixes.png (variant 92)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "what is experiment4 (variant 93)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "explain adaptive probe (variant 94)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "how do i orthogonal ids (variant 95)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i set_readout.png (variant 96)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "how to LSH (variant 97)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "what is adaptive probe (variant 98)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "hello! (variant 0) (variant 99)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Hello (variant 1) (variant 100)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hi (variant 2) (variant 101)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hi! (variant 3) (variant 102)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Hey (variant 4) (variant 103)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hey! (variant 5) (variant 104)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good morning (variant 6) (variant 105)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good morning! (variant 7) (variant 106)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good afternoon! (variant 8) (variant 107)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Good afternoon (variant 9) (variant 108)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "yo (variant 10) (variant 109)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "yo! (variant 11) (variant 110)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "howdy! (variant 12) (variant 111)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "howdy (variant 13) (variant 112)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "can you run experiment3 (variant 14) (variant 113)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment3 (variant 15) (variant 114)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment3 please (variant 16) (variant 115)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you run experiment 3 (variant 17) (variant 116)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment 3 please (variant 18) (variant 117)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment 3 (variant 19) (variant 118)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "execute experiment3 please (variant 20) (variant 119)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you execute experiment3 (variant 21) (variant 120)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "execute experiment3 (variant 22) (variant 121)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "start panel tests (variant 23) (variant 122)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run the panels (variant 24) (variant 123)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you launch experiment3 (variant 25) (variant 124)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "launch experiment3 (variant 26) (variant 125)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "launch experiment3 please (variant 27) (variant 126)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "open final image (variant 28) (variant 127)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "show final_fixes.png (variant 29) (variant 128)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "open set readout (variant 30) (variant 129)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "display set_readout.png (variant 31) (variant 130)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "how do i run the experiments (variant 32) (variant 131)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "how to run experiment3 (variant 33) (variant 132)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "what command runs experiment4 (variant 34) (variant 133)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "how do I generate the plots (variant 35) (variant 134)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "what does panel1 test (variant 36) (variant 135)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "explain panel 2 (variant 37) (variant 136)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "what is panel3 about (variant 38) (variant 137)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "describe the entry snap experiment (variant 39) (variant 138)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "what is LSH (variant 40) (variant 139)",
+    "LSH (Locality-Sensitive Hashing) hashes similar vectors into the same buckets for fast approximate nearest neighbor."
+  ],
+  [
+    "explain LSH briefly (variant 41) (variant 140)",
+    "LSH uses random hyperplanes to map high-dim vectors to bucket indices where similar vectors collide."
+  ],
+  [
+    "how does deflation work (variant 42) (variant 141)",
+    "Deflation retrieves a top candidate, verifies it, subtracts its trace from the signal, and repeats."
+  ],
+  [
+    "what is quantized restart (variant 43) (variant 142)",
+    "Quantized restart snaps the noisy hop output to the nearest known item before the next hop."
+  ],
+  [
+    "thanks (variant 44) (variant 143)",
+    "You're welcome!"
+  ],
+  [
+    "thank you (variant 45) (variant 144)",
+    "You're welcome!"
+  ],
+  [
+    "thx (variant 46) (variant 145)",
+    "You're welcome!"
+  ],
+  [
+    "cheers (variant 47) (variant 146)",
+    "You're welcome!"
+  ],
+  [
+    "bye (variant 48) (variant 147)",
+    "Goodbye!"
+  ],
+  [
+    "goodbye (variant 49) (variant 148)",
+    "Goodbye!"
+  ],
+  [
+    "see ya (variant 50) (variant 149)",
+    "Goodbye!"
+  ],
+  [
+    "how do i LSH (variant 51) (variant 150)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "how to per-leaf margin (variant 52) (variant 151)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "how do i experiment3 (variant 53) (variant 152)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "explain LSH (variant 54) (variant 153)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "tell me about final_fixes.png (variant 55) (variant 154)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "tell me about orthogonal ids (variant 56) (variant 155)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i quantized restart (variant 57) (variant 156)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "what is orthogonal ids (variant 58) (variant 157)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "what is deflation (variant 59) (variant 158)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how do i adaptive probe (variant 60) (variant 159)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "explain experiment3 (variant 61) (variant 160)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "explain deflation (variant 62) (variant 161)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "tell me about adaptive probe (variant 63) (variant 162)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "how do i final_fixes.png (variant 64) (variant 163)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "how to orthogonal ids (variant 65) (variant 164)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i experiment4 (variant 66) (variant 165)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "tell me about per-leaf margin (variant 67) (variant 166)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "explain orthogonal ids (variant 68) (variant 167)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i per-leaf margin (variant 69) (variant 168)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "what is final_fixes.png (variant 70) (variant 169)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "how to experiment4 (variant 71) (variant 170)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "what is per-leaf margin (variant 72) (variant 171)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "explain set_readout.png (variant 73) (variant 172)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "explain experiment4 (variant 74) (variant 173)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "how to quantized restart (variant 75) (variant 174)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "how do i deflation (variant 76) (variant 175)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how to set_readout.png (variant 77) (variant 176)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "what is experiment3 (variant 78) (variant 177)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "tell me about deflation (variant 79) (variant 178)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how to adaptive probe (variant 80) (variant 179)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "tell me about experiment3 (variant 81) (variant 180)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "tell me about quantized restart (variant 82) (variant 181)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "tell me about experiment4 (variant 83) (variant 182)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "how to experiment3 (variant 84) (variant 183)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "what is set_readout.png (variant 85) (variant 184)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "explain final_fixes.png (variant 86) (variant 185)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "explain quantized restart (variant 87) (variant 186)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "how to deflation (variant 88) (variant 187)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "tell me about LSH (variant 89) (variant 188)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "explain per-leaf margin (variant 90) (variant 189)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "tell me about set_readout.png (variant 91) (variant 190)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "how to final_fixes.png (variant 92) (variant 191)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "what is experiment4 (variant 93) (variant 192)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "explain adaptive probe (variant 94) (variant 193)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "how do i orthogonal ids (variant 95) (variant 194)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i set_readout.png (variant 96) (variant 195)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "how to LSH (variant 97) (variant 196)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "what is adaptive probe (variant 98) (variant 197)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "hello! (variant 0) (variant 99) (variant 198)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Hello (variant 1) (variant 100) (variant 199)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hi (variant 2) (variant 101) (variant 200)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hi! (variant 3) (variant 102) (variant 201)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Hey (variant 4) (variant 103) (variant 202)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hey! (variant 5) (variant 104) (variant 203)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good morning (variant 6) (variant 105) (variant 204)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good morning! (variant 7) (variant 106) (variant 205)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good afternoon! (variant 8) (variant 107) (variant 206)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Good afternoon (variant 9) (variant 108) (variant 207)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "yo (variant 10) (variant 109) (variant 208)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "yo! (variant 11) (variant 110) (variant 209)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "howdy! (variant 12) (variant 111) (variant 210)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "howdy (variant 13) (variant 112) (variant 211)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "can you run experiment3 (variant 14) (variant 113) (variant 212)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment3 (variant 15) (variant 114) (variant 213)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment3 please (variant 16) (variant 115) (variant 214)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you run experiment 3 (variant 17) (variant 116) (variant 215)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment 3 please (variant 18) (variant 117) (variant 216)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment 3 (variant 19) (variant 118) (variant 217)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "execute experiment3 please (variant 20) (variant 119) (variant 218)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you execute experiment3 (variant 21) (variant 120) (variant 219)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "execute experiment3 (variant 22) (variant 121) (variant 220)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "start panel tests (variant 23) (variant 122) (variant 221)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run the panels (variant 24) (variant 123) (variant 222)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you launch experiment3 (variant 25) (variant 124) (variant 223)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "launch experiment3 (variant 26) (variant 125) (variant 224)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "launch experiment3 please (variant 27) (variant 126) (variant 225)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "open final image (variant 28) (variant 127) (variant 226)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "show final_fixes.png (variant 29) (variant 128) (variant 227)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "open set readout (variant 30) (variant 129) (variant 228)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "display set_readout.png (variant 31) (variant 130) (variant 229)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "how do i run the experiments (variant 32) (variant 131) (variant 230)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "how to run experiment3 (variant 33) (variant 132) (variant 231)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "what command runs experiment4 (variant 34) (variant 133) (variant 232)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "how do I generate the plots (variant 35) (variant 134) (variant 233)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "what does panel1 test (variant 36) (variant 135) (variant 234)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "explain panel 2 (variant 37) (variant 136) (variant 235)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "what is panel3 about (variant 38) (variant 137) (variant 236)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "describe the entry snap experiment (variant 39) (variant 138) (variant 237)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "what is LSH (variant 40) (variant 139) (variant 238)",
+    "LSH (Locality-Sensitive Hashing) hashes similar vectors into the same buckets for fast approximate nearest neighbor."
+  ],
+  [
+    "explain LSH briefly (variant 41) (variant 140) (variant 239)",
+    "LSH uses random hyperplanes to map high-dim vectors to bucket indices where similar vectors collide."
+  ],
+  [
+    "how does deflation work (variant 42) (variant 141) (variant 240)",
+    "Deflation retrieves a top candidate, verifies it, subtracts its trace from the signal, and repeats."
+  ],
+  [
+    "what is quantized restart (variant 43) (variant 142) (variant 241)",
+    "Quantized restart snaps the noisy hop output to the nearest known item before the next hop."
+  ],
+  [
+    "thanks (variant 44) (variant 143) (variant 242)",
+    "You're welcome!"
+  ],
+  [
+    "thank you (variant 45) (variant 144) (variant 243)",
+    "You're welcome!"
+  ],
+  [
+    "thx (variant 46) (variant 145) (variant 244)",
+    "You're welcome!"
+  ],
+  [
+    "cheers (variant 47) (variant 146) (variant 245)",
+    "You're welcome!"
+  ],
+  [
+    "bye (variant 48) (variant 147) (variant 246)",
+    "Goodbye!"
+  ],
+  [
+    "goodbye (variant 49) (variant 148) (variant 247)",
+    "Goodbye!"
+  ],
+  [
+    "see ya (variant 50) (variant 149) (variant 248)",
+    "Goodbye!"
+  ],
+  [
+    "how do i LSH (variant 51) (variant 150) (variant 249)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "how to per-leaf margin (variant 52) (variant 151) (variant 250)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "how do i experiment3 (variant 53) (variant 152) (variant 251)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "explain LSH (variant 54) (variant 153) (variant 252)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "tell me about final_fixes.png (variant 55) (variant 154) (variant 253)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "tell me about orthogonal ids (variant 56) (variant 155) (variant 254)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i quantized restart (variant 57) (variant 156) (variant 255)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "what is orthogonal ids (variant 58) (variant 157) (variant 256)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "what is deflation (variant 59) (variant 158) (variant 257)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how do i adaptive probe (variant 60) (variant 159) (variant 258)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "explain experiment3 (variant 61) (variant 160) (variant 259)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "explain deflation (variant 62) (variant 161) (variant 260)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "tell me about adaptive probe (variant 63) (variant 162) (variant 261)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "how do i final_fixes.png (variant 64) (variant 163) (variant 262)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "how to orthogonal ids (variant 65) (variant 164) (variant 263)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i experiment4 (variant 66) (variant 165) (variant 264)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "tell me about per-leaf margin (variant 67) (variant 166) (variant 265)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "explain orthogonal ids (variant 68) (variant 167) (variant 266)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i per-leaf margin (variant 69) (variant 168) (variant 267)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "what is final_fixes.png (variant 70) (variant 169) (variant 268)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "how to experiment4 (variant 71) (variant 170) (variant 269)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "what is per-leaf margin (variant 72) (variant 171) (variant 270)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "explain set_readout.png (variant 73) (variant 172) (variant 271)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "explain experiment4 (variant 74) (variant 173) (variant 272)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "how to quantized restart (variant 75) (variant 174) (variant 273)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "how do i deflation (variant 76) (variant 175) (variant 274)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how to set_readout.png (variant 77) (variant 176) (variant 275)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "what is experiment3 (variant 78) (variant 177) (variant 276)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "tell me about deflation (variant 79) (variant 178) (variant 277)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how to adaptive probe (variant 80) (variant 179) (variant 278)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "tell me about experiment3 (variant 81) (variant 180) (variant 279)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "tell me about quantized restart (variant 82) (variant 181) (variant 280)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "tell me about experiment4 (variant 83) (variant 182) (variant 281)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "how to experiment3 (variant 84) (variant 183) (variant 282)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "what is set_readout.png (variant 85) (variant 184) (variant 283)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "explain final_fixes.png (variant 86) (variant 185) (variant 284)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "explain quantized restart (variant 87) (variant 186) (variant 285)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "how to deflation (variant 88) (variant 187) (variant 286)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "tell me about LSH (variant 89) (variant 188) (variant 287)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "explain per-leaf margin (variant 90) (variant 189) (variant 288)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "tell me about set_readout.png (variant 91) (variant 190) (variant 289)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "how to final_fixes.png (variant 92) (variant 191) (variant 290)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "what is experiment4 (variant 93) (variant 192) (variant 291)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "explain adaptive probe (variant 94) (variant 193) (variant 292)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "how do i orthogonal ids (variant 95) (variant 194) (variant 293)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i set_readout.png (variant 96) (variant 195) (variant 294)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "how to LSH (variant 97) (variant 196) (variant 295)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "what is adaptive probe (variant 98) (variant 197) (variant 296)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "hello! (variant 0) (variant 99) (variant 198) (variant 297)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Hello (variant 1) (variant 100) (variant 199) (variant 298)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hi (variant 2) (variant 101) (variant 200) (variant 299)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hi! (variant 3) (variant 102) (variant 201) (variant 300)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Hey (variant 4) (variant 103) (variant 202) (variant 301)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hey! (variant 5) (variant 104) (variant 203) (variant 302)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good morning (variant 6) (variant 105) (variant 204) (variant 303)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good morning! (variant 7) (variant 106) (variant 205) (variant 304)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good afternoon! (variant 8) (variant 107) (variant 206) (variant 305)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Good afternoon (variant 9) (variant 108) (variant 207) (variant 306)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "yo (variant 10) (variant 109) (variant 208) (variant 307)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "yo! (variant 11) (variant 110) (variant 209) (variant 308)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "howdy! (variant 12) (variant 111) (variant 210) (variant 309)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "howdy (variant 13) (variant 112) (variant 211) (variant 310)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "can you run experiment3 (variant 14) (variant 113) (variant 212) (variant 311)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment3 (variant 15) (variant 114) (variant 213) (variant 312)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment3 please (variant 16) (variant 115) (variant 214) (variant 313)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you run experiment 3 (variant 17) (variant 116) (variant 215) (variant 314)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment 3 please (variant 18) (variant 117) (variant 216) (variant 315)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment 3 (variant 19) (variant 118) (variant 217) (variant 316)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "execute experiment3 please (variant 20) (variant 119) (variant 218) (variant 317)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you execute experiment3 (variant 21) (variant 120) (variant 219) (variant 318)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "execute experiment3 (variant 22) (variant 121) (variant 220) (variant 319)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "start panel tests (variant 23) (variant 122) (variant 221) (variant 320)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run the panels (variant 24) (variant 123) (variant 222) (variant 321)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you launch experiment3 (variant 25) (variant 124) (variant 223) (variant 322)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "launch experiment3 (variant 26) (variant 125) (variant 224) (variant 323)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "launch experiment3 please (variant 27) (variant 126) (variant 225) (variant 324)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "open final image (variant 28) (variant 127) (variant 226) (variant 325)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "show final_fixes.png (variant 29) (variant 128) (variant 227) (variant 326)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "open set readout (variant 30) (variant 129) (variant 228) (variant 327)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "display set_readout.png (variant 31) (variant 130) (variant 229) (variant 328)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "how do i run the experiments (variant 32) (variant 131) (variant 230) (variant 329)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "how to run experiment3 (variant 33) (variant 132) (variant 231) (variant 330)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "what command runs experiment4 (variant 34) (variant 133) (variant 232) (variant 331)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "how do I generate the plots (variant 35) (variant 134) (variant 233) (variant 332)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "what does panel1 test (variant 36) (variant 135) (variant 234) (variant 333)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "explain panel 2 (variant 37) (variant 136) (variant 235) (variant 334)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "what is panel3 about (variant 38) (variant 137) (variant 236) (variant 335)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "describe the entry snap experiment (variant 39) (variant 138) (variant 237) (variant 336)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "what is LSH (variant 40) (variant 139) (variant 238) (variant 337)",
+    "LSH (Locality-Sensitive Hashing) hashes similar vectors into the same buckets for fast approximate nearest neighbor."
+  ],
+  [
+    "explain LSH briefly (variant 41) (variant 140) (variant 239) (variant 338)",
+    "LSH uses random hyperplanes to map high-dim vectors to bucket indices where similar vectors collide."
+  ],
+  [
+    "how does deflation work (variant 42) (variant 141) (variant 240) (variant 339)",
+    "Deflation retrieves a top candidate, verifies it, subtracts its trace from the signal, and repeats."
+  ],
+  [
+    "what is quantized restart (variant 43) (variant 142) (variant 241) (variant 340)",
+    "Quantized restart snaps the noisy hop output to the nearest known item before the next hop."
+  ],
+  [
+    "thanks (variant 44) (variant 143) (variant 242) (variant 341)",
+    "You're welcome!"
+  ],
+  [
+    "thank you (variant 45) (variant 144) (variant 243) (variant 342)",
+    "You're welcome!"
+  ],
+  [
+    "thx (variant 46) (variant 145) (variant 244) (variant 343)",
+    "You're welcome!"
+  ],
+  [
+    "cheers (variant 47) (variant 146) (variant 245) (variant 344)",
+    "You're welcome!"
+  ],
+  [
+    "bye (variant 48) (variant 147) (variant 246) (variant 345)",
+    "Goodbye!"
+  ],
+  [
+    "goodbye (variant 49) (variant 148) (variant 247) (variant 346)",
+    "Goodbye!"
+  ],
+  [
+    "see ya (variant 50) (variant 149) (variant 248) (variant 347)",
+    "Goodbye!"
+  ],
+  [
+    "how do i LSH (variant 51) (variant 150) (variant 249) (variant 348)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "how to per-leaf margin (variant 52) (variant 151) (variant 250) (variant 349)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "how do i experiment3 (variant 53) (variant 152) (variant 251) (variant 350)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "explain LSH (variant 54) (variant 153) (variant 252) (variant 351)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "tell me about final_fixes.png (variant 55) (variant 154) (variant 253) (variant 352)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "tell me about orthogonal ids (variant 56) (variant 155) (variant 254) (variant 353)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i quantized restart (variant 57) (variant 156) (variant 255) (variant 354)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "what is orthogonal ids (variant 58) (variant 157) (variant 256) (variant 355)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "what is deflation (variant 59) (variant 158) (variant 257) (variant 356)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how do i adaptive probe (variant 60) (variant 159) (variant 258) (variant 357)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "explain experiment3 (variant 61) (variant 160) (variant 259) (variant 358)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "explain deflation (variant 62) (variant 161) (variant 260) (variant 359)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "tell me about adaptive probe (variant 63) (variant 162) (variant 261) (variant 360)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "how do i final_fixes.png (variant 64) (variant 163) (variant 262) (variant 361)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "how to orthogonal ids (variant 65) (variant 164) (variant 263) (variant 362)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i experiment4 (variant 66) (variant 165) (variant 264) (variant 363)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "tell me about per-leaf margin (variant 67) (variant 166) (variant 265) (variant 364)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "explain orthogonal ids (variant 68) (variant 167) (variant 266) (variant 365)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i per-leaf margin (variant 69) (variant 168) (variant 267) (variant 366)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "what is final_fixes.png (variant 70) (variant 169) (variant 268) (variant 367)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "how to experiment4 (variant 71) (variant 170) (variant 269) (variant 368)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "what is per-leaf margin (variant 72) (variant 171) (variant 270) (variant 369)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "explain set_readout.png (variant 73) (variant 172) (variant 271) (variant 370)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "explain experiment4 (variant 74) (variant 173) (variant 272) (variant 371)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "how to quantized restart (variant 75) (variant 174) (variant 273) (variant 372)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "how do i deflation (variant 76) (variant 175) (variant 274) (variant 373)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how to set_readout.png (variant 77) (variant 176) (variant 275) (variant 374)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "what is experiment3 (variant 78) (variant 177) (variant 276) (variant 375)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "tell me about deflation (variant 79) (variant 178) (variant 277) (variant 376)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how to adaptive probe (variant 80) (variant 179) (variant 278) (variant 377)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "tell me about experiment3 (variant 81) (variant 180) (variant 279) (variant 378)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "tell me about quantized restart (variant 82) (variant 181) (variant 280) (variant 379)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "tell me about experiment4 (variant 83) (variant 182) (variant 281) (variant 380)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "how to experiment3 (variant 84) (variant 183) (variant 282) (variant 381)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "what is set_readout.png (variant 85) (variant 184) (variant 283) (variant 382)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "explain final_fixes.png (variant 86) (variant 185) (variant 284) (variant 383)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "explain quantized restart (variant 87) (variant 186) (variant 285) (variant 384)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "how to deflation (variant 88) (variant 187) (variant 286) (variant 385)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "tell me about LSH (variant 89) (variant 188) (variant 287) (variant 386)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "explain per-leaf margin (variant 90) (variant 189) (variant 288) (variant 387)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "tell me about set_readout.png (variant 91) (variant 190) (variant 289) (variant 388)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "how to final_fixes.png (variant 92) (variant 191) (variant 290) (variant 389)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "what is experiment4 (variant 93) (variant 192) (variant 291) (variant 390)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "explain adaptive probe (variant 94) (variant 193) (variant 292) (variant 391)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "how do i orthogonal ids (variant 95) (variant 194) (variant 293) (variant 392)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i set_readout.png (variant 96) (variant 195) (variant 294) (variant 393)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "how to LSH (variant 97) (variant 196) (variant 295) (variant 394)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "what is adaptive probe (variant 98) (variant 197) (variant 296) (variant 395)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "hello! (variant 0) (variant 99) (variant 198) (variant 297) (variant 396)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Hello (variant 1) (variant 100) (variant 199) (variant 298) (variant 397)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hi (variant 2) (variant 101) (variant 200) (variant 299) (variant 398)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hi! (variant 3) (variant 102) (variant 201) (variant 300) (variant 399)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Hey (variant 4) (variant 103) (variant 202) (variant 301) (variant 400)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hey! (variant 5) (variant 104) (variant 203) (variant 302) (variant 401)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good morning (variant 6) (variant 105) (variant 204) (variant 303) (variant 402)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good morning! (variant 7) (variant 106) (variant 205) (variant 304) (variant 403)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good afternoon! (variant 8) (variant 107) (variant 206) (variant 305) (variant 404)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Good afternoon (variant 9) (variant 108) (variant 207) (variant 306) (variant 405)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "yo (variant 10) (variant 109) (variant 208) (variant 307) (variant 406)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "yo! (variant 11) (variant 110) (variant 209) (variant 308) (variant 407)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "howdy! (variant 12) (variant 111) (variant 210) (variant 309) (variant 408)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "howdy (variant 13) (variant 112) (variant 211) (variant 310) (variant 409)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "can you run experiment3 (variant 14) (variant 113) (variant 212) (variant 311) (variant 410)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment3 (variant 15) (variant 114) (variant 213) (variant 312) (variant 411)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment3 please (variant 16) (variant 115) (variant 214) (variant 313) (variant 412)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you run experiment 3 (variant 17) (variant 116) (variant 215) (variant 314) (variant 413)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment 3 please (variant 18) (variant 117) (variant 216) (variant 315) (variant 414)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment 3 (variant 19) (variant 118) (variant 217) (variant 316) (variant 415)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "execute experiment3 please (variant 20) (variant 119) (variant 218) (variant 317) (variant 416)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you execute experiment3 (variant 21) (variant 120) (variant 219) (variant 318) (variant 417)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "execute experiment3 (variant 22) (variant 121) (variant 220) (variant 319) (variant 418)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "start panel tests (variant 23) (variant 122) (variant 221) (variant 320) (variant 419)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run the panels (variant 24) (variant 123) (variant 222) (variant 321) (variant 420)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you launch experiment3 (variant 25) (variant 124) (variant 223) (variant 322) (variant 421)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "launch experiment3 (variant 26) (variant 125) (variant 224) (variant 323) (variant 422)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "launch experiment3 please (variant 27) (variant 126) (variant 225) (variant 324) (variant 423)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "open final image (variant 28) (variant 127) (variant 226) (variant 325) (variant 424)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "show final_fixes.png (variant 29) (variant 128) (variant 227) (variant 326) (variant 425)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "open set readout (variant 30) (variant 129) (variant 228) (variant 327) (variant 426)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "display set_readout.png (variant 31) (variant 130) (variant 229) (variant 328) (variant 427)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "how do i run the experiments (variant 32) (variant 131) (variant 230) (variant 329) (variant 428)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "how to run experiment3 (variant 33) (variant 132) (variant 231) (variant 330) (variant 429)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "what command runs experiment4 (variant 34) (variant 133) (variant 232) (variant 331) (variant 430)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "how do I generate the plots (variant 35) (variant 134) (variant 233) (variant 332) (variant 431)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "what does panel1 test (variant 36) (variant 135) (variant 234) (variant 333) (variant 432)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "explain panel 2 (variant 37) (variant 136) (variant 235) (variant 334) (variant 433)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "what is panel3 about (variant 38) (variant 137) (variant 236) (variant 335) (variant 434)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "describe the entry snap experiment (variant 39) (variant 138) (variant 237) (variant 336) (variant 435)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "what is LSH (variant 40) (variant 139) (variant 238) (variant 337) (variant 436)",
+    "LSH (Locality-Sensitive Hashing) hashes similar vectors into the same buckets for fast approximate nearest neighbor."
+  ],
+  [
+    "explain LSH briefly (variant 41) (variant 140) (variant 239) (variant 338) (variant 437)",
+    "LSH uses random hyperplanes to map high-dim vectors to bucket indices where similar vectors collide."
+  ],
+  [
+    "how does deflation work (variant 42) (variant 141) (variant 240) (variant 339) (variant 438)",
+    "Deflation retrieves a top candidate, verifies it, subtracts its trace from the signal, and repeats."
+  ],
+  [
+    "what is quantized restart (variant 43) (variant 142) (variant 241) (variant 340) (variant 439)",
+    "Quantized restart snaps the noisy hop output to the nearest known item before the next hop."
+  ],
+  [
+    "thanks (variant 44) (variant 143) (variant 242) (variant 341) (variant 440)",
+    "You're welcome!"
+  ],
+  [
+    "thank you (variant 45) (variant 144) (variant 243) (variant 342) (variant 441)",
+    "You're welcome!"
+  ],
+  [
+    "thx (variant 46) (variant 145) (variant 244) (variant 343) (variant 442)",
+    "You're welcome!"
+  ],
+  [
+    "cheers (variant 47) (variant 146) (variant 245) (variant 344) (variant 443)",
+    "You're welcome!"
+  ],
+  [
+    "bye (variant 48) (variant 147) (variant 246) (variant 345) (variant 444)",
+    "Goodbye!"
+  ],
+  [
+    "goodbye (variant 49) (variant 148) (variant 247) (variant 346) (variant 445)",
+    "Goodbye!"
+  ],
+  [
+    "see ya (variant 50) (variant 149) (variant 248) (variant 347) (variant 446)",
+    "Goodbye!"
+  ],
+  [
+    "how do i LSH (variant 51) (variant 150) (variant 249) (variant 348) (variant 447)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "how to per-leaf margin (variant 52) (variant 151) (variant 250) (variant 349) (variant 448)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "how do i experiment3 (variant 53) (variant 152) (variant 251) (variant 350) (variant 449)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "explain LSH (variant 54) (variant 153) (variant 252) (variant 351) (variant 450)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "tell me about final_fixes.png (variant 55) (variant 154) (variant 253) (variant 352) (variant 451)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "tell me about orthogonal ids (variant 56) (variant 155) (variant 254) (variant 353) (variant 452)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i quantized restart (variant 57) (variant 156) (variant 255) (variant 354) (variant 453)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "what is orthogonal ids (variant 58) (variant 157) (variant 256) (variant 355) (variant 454)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "what is deflation (variant 59) (variant 158) (variant 257) (variant 356) (variant 455)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how do i adaptive probe (variant 60) (variant 159) (variant 258) (variant 357) (variant 456)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "explain experiment3 (variant 61) (variant 160) (variant 259) (variant 358) (variant 457)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "explain deflation (variant 62) (variant 161) (variant 260) (variant 359) (variant 458)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "tell me about adaptive probe (variant 63) (variant 162) (variant 261) (variant 360) (variant 459)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "how do i final_fixes.png (variant 64) (variant 163) (variant 262) (variant 361) (variant 460)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "how to orthogonal ids (variant 65) (variant 164) (variant 263) (variant 362) (variant 461)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i experiment4 (variant 66) (variant 165) (variant 264) (variant 363) (variant 462)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "tell me about per-leaf margin (variant 67) (variant 166) (variant 265) (variant 364) (variant 463)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "explain orthogonal ids (variant 68) (variant 167) (variant 266) (variant 365) (variant 464)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i per-leaf margin (variant 69) (variant 168) (variant 267) (variant 366) (variant 465)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "what is final_fixes.png (variant 70) (variant 169) (variant 268) (variant 367) (variant 466)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "how to experiment4 (variant 71) (variant 170) (variant 269) (variant 368) (variant 467)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "what is per-leaf margin (variant 72) (variant 171) (variant 270) (variant 369) (variant 468)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "explain set_readout.png (variant 73) (variant 172) (variant 271) (variant 370) (variant 469)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "explain experiment4 (variant 74) (variant 173) (variant 272) (variant 371) (variant 470)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "how to quantized restart (variant 75) (variant 174) (variant 273) (variant 372) (variant 471)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "how do i deflation (variant 76) (variant 175) (variant 274) (variant 373) (variant 472)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how to set_readout.png (variant 77) (variant 176) (variant 275) (variant 374) (variant 473)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "what is experiment3 (variant 78) (variant 177) (variant 276) (variant 375) (variant 474)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "tell me about deflation (variant 79) (variant 178) (variant 277) (variant 376) (variant 475)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how to adaptive probe (variant 80) (variant 179) (variant 278) (variant 377) (variant 476)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "tell me about experiment3 (variant 81) (variant 180) (variant 279) (variant 378) (variant 477)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "tell me about quantized restart (variant 82) (variant 181) (variant 280) (variant 379) (variant 478)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "tell me about experiment4 (variant 83) (variant 182) (variant 281) (variant 380) (variant 479)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "how to experiment3 (variant 84) (variant 183) (variant 282) (variant 381) (variant 480)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "what is set_readout.png (variant 85) (variant 184) (variant 283) (variant 382) (variant 481)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "explain final_fixes.png (variant 86) (variant 185) (variant 284) (variant 383) (variant 482)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "explain quantized restart (variant 87) (variant 186) (variant 285) (variant 384) (variant 483)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "how to deflation (variant 88) (variant 187) (variant 286) (variant 385) (variant 484)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "tell me about LSH (variant 89) (variant 188) (variant 287) (variant 386) (variant 485)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "explain per-leaf margin (variant 90) (variant 189) (variant 288) (variant 387) (variant 486)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "tell me about set_readout.png (variant 91) (variant 190) (variant 289) (variant 388) (variant 487)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "how to final_fixes.png (variant 92) (variant 191) (variant 290) (variant 389) (variant 488)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "what is experiment4 (variant 93) (variant 192) (variant 291) (variant 390) (variant 489)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "explain adaptive probe (variant 94) (variant 193) (variant 292) (variant 391) (variant 490)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "how do i orthogonal ids (variant 95) (variant 194) (variant 293) (variant 392) (variant 491)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i set_readout.png (variant 96) (variant 195) (variant 294) (variant 393) (variant 492)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "how to LSH (variant 97) (variant 196) (variant 295) (variant 394) (variant 493)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "what is adaptive probe (variant 98) (variant 197) (variant 296) (variant 395) (variant 494)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "hello! (variant 0) (variant 99) (variant 198) (variant 297) (variant 396) (variant 495)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Hello (variant 1) (variant 100) (variant 199) (variant 298) (variant 397) (variant 496)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hi (variant 2) (variant 101) (variant 200) (variant 299) (variant 398) (variant 497)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hi! (variant 3) (variant 102) (variant 201) (variant 300) (variant 399) (variant 498)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Hey (variant 4) (variant 103) (variant 202) (variant 301) (variant 400) (variant 499)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hey! (variant 5) (variant 104) (variant 203) (variant 302) (variant 401) (variant 500)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good morning (variant 6) (variant 105) (variant 204) (variant 303) (variant 402) (variant 501)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good morning! (variant 7) (variant 106) (variant 205) (variant 304) (variant 403) (variant 502)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good afternoon! (variant 8) (variant 107) (variant 206) (variant 305) (variant 404) (variant 503)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Good afternoon (variant 9) (variant 108) (variant 207) (variant 306) (variant 405) (variant 504)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "yo (variant 10) (variant 109) (variant 208) (variant 307) (variant 406) (variant 505)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "yo! (variant 11) (variant 110) (variant 209) (variant 308) (variant 407) (variant 506)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "howdy! (variant 12) (variant 111) (variant 210) (variant 309) (variant 408) (variant 507)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "howdy (variant 13) (variant 112) (variant 211) (variant 310) (variant 409) (variant 508)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "can you run experiment3 (variant 14) (variant 113) (variant 212) (variant 311) (variant 410) (variant 509)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment3 (variant 15) (variant 114) (variant 213) (variant 312) (variant 411) (variant 510)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment3 please (variant 16) (variant 115) (variant 214) (variant 313) (variant 412) (variant 511)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you run experiment 3 (variant 17) (variant 116) (variant 215) (variant 314) (variant 413) (variant 512)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment 3 please (variant 18) (variant 117) (variant 216) (variant 315) (variant 414) (variant 513)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment 3 (variant 19) (variant 118) (variant 217) (variant 316) (variant 415) (variant 514)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "execute experiment3 please (variant 20) (variant 119) (variant 218) (variant 317) (variant 416) (variant 515)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you execute experiment3 (variant 21) (variant 120) (variant 219) (variant 318) (variant 417) (variant 516)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "execute experiment3 (variant 22) (variant 121) (variant 220) (variant 319) (variant 418) (variant 517)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "start panel tests (variant 23) (variant 122) (variant 221) (variant 320) (variant 419) (variant 518)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run the panels (variant 24) (variant 123) (variant 222) (variant 321) (variant 420) (variant 519)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you launch experiment3 (variant 25) (variant 124) (variant 223) (variant 322) (variant 421) (variant 520)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "launch experiment3 (variant 26) (variant 125) (variant 224) (variant 323) (variant 422) (variant 521)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "launch experiment3 please (variant 27) (variant 126) (variant 225) (variant 324) (variant 423) (variant 522)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "open final image (variant 28) (variant 127) (variant 226) (variant 325) (variant 424) (variant 523)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "show final_fixes.png (variant 29) (variant 128) (variant 227) (variant 326) (variant 425) (variant 524)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "open set readout (variant 30) (variant 129) (variant 228) (variant 327) (variant 426) (variant 525)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "display set_readout.png (variant 31) (variant 130) (variant 229) (variant 328) (variant 427) (variant 526)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "how do i run the experiments (variant 32) (variant 131) (variant 230) (variant 329) (variant 428) (variant 527)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "how to run experiment3 (variant 33) (variant 132) (variant 231) (variant 330) (variant 429) (variant 528)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "what command runs experiment4 (variant 34) (variant 133) (variant 232) (variant 331) (variant 430) (variant 529)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "how do I generate the plots (variant 35) (variant 134) (variant 233) (variant 332) (variant 431) (variant 530)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "what does panel1 test (variant 36) (variant 135) (variant 234) (variant 333) (variant 432) (variant 531)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "explain panel 2 (variant 37) (variant 136) (variant 235) (variant 334) (variant 433) (variant 532)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "what is panel3 about (variant 38) (variant 137) (variant 236) (variant 335) (variant 434) (variant 533)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "describe the entry snap experiment (variant 39) (variant 138) (variant 237) (variant 336) (variant 435) (variant 534)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "what is LSH (variant 40) (variant 139) (variant 238) (variant 337) (variant 436) (variant 535)",
+    "LSH (Locality-Sensitive Hashing) hashes similar vectors into the same buckets for fast approximate nearest neighbor."
+  ],
+  [
+    "explain LSH briefly (variant 41) (variant 140) (variant 239) (variant 338) (variant 437) (variant 536)",
+    "LSH uses random hyperplanes to map high-dim vectors to bucket indices where similar vectors collide."
+  ],
+  [
+    "how does deflation work (variant 42) (variant 141) (variant 240) (variant 339) (variant 438) (variant 537)",
+    "Deflation retrieves a top candidate, verifies it, subtracts its trace from the signal, and repeats."
+  ],
+  [
+    "what is quantized restart (variant 43) (variant 142) (variant 241) (variant 340) (variant 439) (variant 538)",
+    "Quantized restart snaps the noisy hop output to the nearest known item before the next hop."
+  ],
+  [
+    "thanks (variant 44) (variant 143) (variant 242) (variant 341) (variant 440) (variant 539)",
+    "You're welcome!"
+  ],
+  [
+    "thank you (variant 45) (variant 144) (variant 243) (variant 342) (variant 441) (variant 540)",
+    "You're welcome!"
+  ],
+  [
+    "thx (variant 46) (variant 145) (variant 244) (variant 343) (variant 442) (variant 541)",
+    "You're welcome!"
+  ],
+  [
+    "cheers (variant 47) (variant 146) (variant 245) (variant 344) (variant 443) (variant 542)",
+    "You're welcome!"
+  ],
+  [
+    "bye (variant 48) (variant 147) (variant 246) (variant 345) (variant 444) (variant 543)",
+    "Goodbye!"
+  ],
+  [
+    "goodbye (variant 49) (variant 148) (variant 247) (variant 346) (variant 445) (variant 544)",
+    "Goodbye!"
+  ],
+  [
+    "see ya (variant 50) (variant 149) (variant 248) (variant 347) (variant 446) (variant 545)",
+    "Goodbye!"
+  ],
+  [
+    "how do i LSH (variant 51) (variant 150) (variant 249) (variant 348) (variant 447) (variant 546)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "how to per-leaf margin (variant 52) (variant 151) (variant 250) (variant 349) (variant 448) (variant 547)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "how do i experiment3 (variant 53) (variant 152) (variant 251) (variant 350) (variant 449) (variant 548)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "explain LSH (variant 54) (variant 153) (variant 252) (variant 351) (variant 450) (variant 549)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "tell me about final_fixes.png (variant 55) (variant 154) (variant 253) (variant 352) (variant 451) (variant 550)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "tell me about orthogonal ids (variant 56) (variant 155) (variant 254) (variant 353) (variant 452) (variant 551)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i quantized restart (variant 57) (variant 156) (variant 255) (variant 354) (variant 453) (variant 552)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "what is orthogonal ids (variant 58) (variant 157) (variant 256) (variant 355) (variant 454) (variant 553)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "what is deflation (variant 59) (variant 158) (variant 257) (variant 356) (variant 455) (variant 554)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how do i adaptive probe (variant 60) (variant 159) (variant 258) (variant 357) (variant 456) (variant 555)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "explain experiment3 (variant 61) (variant 160) (variant 259) (variant 358) (variant 457) (variant 556)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "explain deflation (variant 62) (variant 161) (variant 260) (variant 359) (variant 458) (variant 557)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "tell me about adaptive probe (variant 63) (variant 162) (variant 261) (variant 360) (variant 459) (variant 558)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "how do i final_fixes.png (variant 64) (variant 163) (variant 262) (variant 361) (variant 460) (variant 559)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "how to orthogonal ids (variant 65) (variant 164) (variant 263) (variant 362) (variant 461) (variant 560)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i experiment4 (variant 66) (variant 165) (variant 264) (variant 363) (variant 462) (variant 561)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "tell me about per-leaf margin (variant 67) (variant 166) (variant 265) (variant 364) (variant 463) (variant 562)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "explain orthogonal ids (variant 68) (variant 167) (variant 266) (variant 365) (variant 464) (variant 563)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i per-leaf margin (variant 69) (variant 168) (variant 267) (variant 366) (variant 465) (variant 564)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "what is final_fixes.png (variant 70) (variant 169) (variant 268) (variant 367) (variant 466) (variant 565)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "how to experiment4 (variant 71) (variant 170) (variant 269) (variant 368) (variant 467) (variant 566)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "what is per-leaf margin (variant 72) (variant 171) (variant 270) (variant 369) (variant 468) (variant 567)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "explain set_readout.png (variant 73) (variant 172) (variant 271) (variant 370) (variant 469) (variant 568)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "explain experiment4 (variant 74) (variant 173) (variant 272) (variant 371) (variant 470) (variant 569)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "how to quantized restart (variant 75) (variant 174) (variant 273) (variant 372) (variant 471) (variant 570)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "how do i deflation (variant 76) (variant 175) (variant 274) (variant 373) (variant 472) (variant 571)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how to set_readout.png (variant 77) (variant 176) (variant 275) (variant 374) (variant 473) (variant 572)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "what is experiment3 (variant 78) (variant 177) (variant 276) (variant 375) (variant 474) (variant 573)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "tell me about deflation (variant 79) (variant 178) (variant 277) (variant 376) (variant 475) (variant 574)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how to adaptive probe (variant 80) (variant 179) (variant 278) (variant 377) (variant 476) (variant 575)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "tell me about experiment3 (variant 81) (variant 180) (variant 279) (variant 378) (variant 477) (variant 576)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "tell me about quantized restart (variant 82) (variant 181) (variant 280) (variant 379) (variant 478) (variant 577)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "tell me about experiment4 (variant 83) (variant 182) (variant 281) (variant 380) (variant 479) (variant 578)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "how to experiment3 (variant 84) (variant 183) (variant 282) (variant 381) (variant 480) (variant 579)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "what is set_readout.png (variant 85) (variant 184) (variant 283) (variant 382) (variant 481) (variant 580)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "explain final_fixes.png (variant 86) (variant 185) (variant 284) (variant 383) (variant 482) (variant 581)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "explain quantized restart (variant 87) (variant 186) (variant 285) (variant 384) (variant 483) (variant 582)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "how to deflation (variant 88) (variant 187) (variant 286) (variant 385) (variant 484) (variant 583)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "tell me about LSH (variant 89) (variant 188) (variant 287) (variant 386) (variant 485) (variant 584)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "explain per-leaf margin (variant 90) (variant 189) (variant 288) (variant 387) (variant 486) (variant 585)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "tell me about set_readout.png (variant 91) (variant 190) (variant 289) (variant 388) (variant 487) (variant 586)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "how to final_fixes.png (variant 92) (variant 191) (variant 290) (variant 389) (variant 488) (variant 587)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "what is experiment4 (variant 93) (variant 192) (variant 291) (variant 390) (variant 489) (variant 588)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "explain adaptive probe (variant 94) (variant 193) (variant 292) (variant 391) (variant 490) (variant 589)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "how do i orthogonal ids (variant 95) (variant 194) (variant 293) (variant 392) (variant 491) (variant 590)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i set_readout.png (variant 96) (variant 195) (variant 294) (variant 393) (variant 492) (variant 591)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "how to LSH (variant 97) (variant 196) (variant 295) (variant 394) (variant 493) (variant 592)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "what is adaptive probe (variant 98) (variant 197) (variant 296) (variant 395) (variant 494) (variant 593)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "hello! (variant 0) (variant 99) (variant 198) (variant 297) (variant 396) (variant 495) (variant 594)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Hello (variant 1) (variant 100) (variant 199) (variant 298) (variant 397) (variant 496) (variant 595)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hi (variant 2) (variant 101) (variant 200) (variant 299) (variant 398) (variant 497) (variant 596)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hi! (variant 3) (variant 102) (variant 201) (variant 300) (variant 399) (variant 498) (variant 597)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Hey (variant 4) (variant 103) (variant 202) (variant 301) (variant 400) (variant 499) (variant 598)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hey! (variant 5) (variant 104) (variant 203) (variant 302) (variant 401) (variant 500) (variant 599)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good morning (variant 6) (variant 105) (variant 204) (variant 303) (variant 402) (variant 501) (variant 600)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good morning! (variant 7) (variant 106) (variant 205) (variant 304) (variant 403) (variant 502) (variant 601)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good afternoon! (variant 8) (variant 107) (variant 206) (variant 305) (variant 404) (variant 503) (variant 602)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Good afternoon (variant 9) (variant 108) (variant 207) (variant 306) (variant 405) (variant 504) (variant 603)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "yo (variant 10) (variant 109) (variant 208) (variant 307) (variant 406) (variant 505) (variant 604)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "yo! (variant 11) (variant 110) (variant 209) (variant 308) (variant 407) (variant 506) (variant 605)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "howdy! (variant 12) (variant 111) (variant 210) (variant 309) (variant 408) (variant 507) (variant 606)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "howdy (variant 13) (variant 112) (variant 211) (variant 310) (variant 409) (variant 508) (variant 607)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "can you run experiment3 (variant 14) (variant 113) (variant 212) (variant 311) (variant 410) (variant 509) (variant 608)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment3 (variant 15) (variant 114) (variant 213) (variant 312) (variant 411) (variant 510) (variant 609)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment3 please (variant 16) (variant 115) (variant 214) (variant 313) (variant 412) (variant 511) (variant 610)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you run experiment 3 (variant 17) (variant 116) (variant 215) (variant 314) (variant 413) (variant 512) (variant 611)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment 3 please (variant 18) (variant 117) (variant 216) (variant 315) (variant 414) (variant 513) (variant 612)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment 3 (variant 19) (variant 118) (variant 217) (variant 316) (variant 415) (variant 514) (variant 613)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "execute experiment3 please (variant 20) (variant 119) (variant 218) (variant 317) (variant 416) (variant 515) (variant 614)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you execute experiment3 (variant 21) (variant 120) (variant 219) (variant 318) (variant 417) (variant 516) (variant 615)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "execute experiment3 (variant 22) (variant 121) (variant 220) (variant 319) (variant 418) (variant 517) (variant 616)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "start panel tests (variant 23) (variant 122) (variant 221) (variant 320) (variant 419) (variant 518) (variant 617)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run the panels (variant 24) (variant 123) (variant 222) (variant 321) (variant 420) (variant 519) (variant 618)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you launch experiment3 (variant 25) (variant 124) (variant 223) (variant 322) (variant 421) (variant 520) (variant 619)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "launch experiment3 (variant 26) (variant 125) (variant 224) (variant 323) (variant 422) (variant 521) (variant 620)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "launch experiment3 please (variant 27) (variant 126) (variant 225) (variant 324) (variant 423) (variant 522) (variant 621)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "open final image (variant 28) (variant 127) (variant 226) (variant 325) (variant 424) (variant 523) (variant 622)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "show final_fixes.png (variant 29) (variant 128) (variant 227) (variant 326) (variant 425) (variant 524) (variant 623)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "open set readout (variant 30) (variant 129) (variant 228) (variant 327) (variant 426) (variant 525) (variant 624)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "display set_readout.png (variant 31) (variant 130) (variant 229) (variant 328) (variant 427) (variant 526) (variant 625)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "how do i run the experiments (variant 32) (variant 131) (variant 230) (variant 329) (variant 428) (variant 527) (variant 626)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "how to run experiment3 (variant 33) (variant 132) (variant 231) (variant 330) (variant 429) (variant 528) (variant 627)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "what command runs experiment4 (variant 34) (variant 133) (variant 232) (variant 331) (variant 430) (variant 529) (variant 628)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "how do I generate the plots (variant 35) (variant 134) (variant 233) (variant 332) (variant 431) (variant 530) (variant 629)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "what does panel1 test (variant 36) (variant 135) (variant 234) (variant 333) (variant 432) (variant 531) (variant 630)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "explain panel 2 (variant 37) (variant 136) (variant 235) (variant 334) (variant 433) (variant 532) (variant 631)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "what is panel3 about (variant 38) (variant 137) (variant 236) (variant 335) (variant 434) (variant 533) (variant 632)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "describe the entry snap experiment (variant 39) (variant 138) (variant 237) (variant 336) (variant 435) (variant 534) (variant 633)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "what is LSH (variant 40) (variant 139) (variant 238) (variant 337) (variant 436) (variant 535) (variant 634)",
+    "LSH (Locality-Sensitive Hashing) hashes similar vectors into the same buckets for fast approximate nearest neighbor."
+  ],
+  [
+    "explain LSH briefly (variant 41) (variant 140) (variant 239) (variant 338) (variant 437) (variant 536) (variant 635)",
+    "LSH uses random hyperplanes to map high-dim vectors to bucket indices where similar vectors collide."
+  ],
+  [
+    "how does deflation work (variant 42) (variant 141) (variant 240) (variant 339) (variant 438) (variant 537) (variant 636)",
+    "Deflation retrieves a top candidate, verifies it, subtracts its trace from the signal, and repeats."
+  ],
+  [
+    "what is quantized restart (variant 43) (variant 142) (variant 241) (variant 340) (variant 439) (variant 538) (variant 637)",
+    "Quantized restart snaps the noisy hop output to the nearest known item before the next hop."
+  ],
+  [
+    "thanks (variant 44) (variant 143) (variant 242) (variant 341) (variant 440) (variant 539) (variant 638)",
+    "You're welcome!"
+  ],
+  [
+    "thank you (variant 45) (variant 144) (variant 243) (variant 342) (variant 441) (variant 540) (variant 639)",
+    "You're welcome!"
+  ],
+  [
+    "thx (variant 46) (variant 145) (variant 244) (variant 343) (variant 442) (variant 541) (variant 640)",
+    "You're welcome!"
+  ],
+  [
+    "cheers (variant 47) (variant 146) (variant 245) (variant 344) (variant 443) (variant 542) (variant 641)",
+    "You're welcome!"
+  ],
+  [
+    "bye (variant 48) (variant 147) (variant 246) (variant 345) (variant 444) (variant 543) (variant 642)",
+    "Goodbye!"
+  ],
+  [
+    "goodbye (variant 49) (variant 148) (variant 247) (variant 346) (variant 445) (variant 544) (variant 643)",
+    "Goodbye!"
+  ],
+  [
+    "see ya (variant 50) (variant 149) (variant 248) (variant 347) (variant 446) (variant 545) (variant 644)",
+    "Goodbye!"
+  ],
+  [
+    "how do i LSH (variant 51) (variant 150) (variant 249) (variant 348) (variant 447) (variant 546) (variant 645)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "how to per-leaf margin (variant 52) (variant 151) (variant 250) (variant 349) (variant 448) (variant 547) (variant 646)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "how do i experiment3 (variant 53) (variant 152) (variant 251) (variant 350) (variant 449) (variant 548) (variant 647)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "explain LSH (variant 54) (variant 153) (variant 252) (variant 351) (variant 450) (variant 549) (variant 648)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "tell me about final_fixes.png (variant 55) (variant 154) (variant 253) (variant 352) (variant 451) (variant 550) (variant 649)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "tell me about orthogonal ids (variant 56) (variant 155) (variant 254) (variant 353) (variant 452) (variant 551) (variant 650)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i quantized restart (variant 57) (variant 156) (variant 255) (variant 354) (variant 453) (variant 552) (variant 651)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "what is orthogonal ids (variant 58) (variant 157) (variant 256) (variant 355) (variant 454) (variant 553) (variant 652)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "what is deflation (variant 59) (variant 158) (variant 257) (variant 356) (variant 455) (variant 554) (variant 653)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how do i adaptive probe (variant 60) (variant 159) (variant 258) (variant 357) (variant 456) (variant 555) (variant 654)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "explain experiment3 (variant 61) (variant 160) (variant 259) (variant 358) (variant 457) (variant 556) (variant 655)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "explain deflation (variant 62) (variant 161) (variant 260) (variant 359) (variant 458) (variant 557) (variant 656)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "tell me about adaptive probe (variant 63) (variant 162) (variant 261) (variant 360) (variant 459) (variant 558) (variant 657)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "how do i final_fixes.png (variant 64) (variant 163) (variant 262) (variant 361) (variant 460) (variant 559) (variant 658)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "how to orthogonal ids (variant 65) (variant 164) (variant 263) (variant 362) (variant 461) (variant 560) (variant 659)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i experiment4 (variant 66) (variant 165) (variant 264) (variant 363) (variant 462) (variant 561) (variant 660)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "tell me about per-leaf margin (variant 67) (variant 166) (variant 265) (variant 364) (variant 463) (variant 562) (variant 661)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "explain orthogonal ids (variant 68) (variant 167) (variant 266) (variant 365) (variant 464) (variant 563) (variant 662)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i per-leaf margin (variant 69) (variant 168) (variant 267) (variant 366) (variant 465) (variant 564) (variant 663)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "what is final_fixes.png (variant 70) (variant 169) (variant 268) (variant 367) (variant 466) (variant 565) (variant 664)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "how to experiment4 (variant 71) (variant 170) (variant 269) (variant 368) (variant 467) (variant 566) (variant 665)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "what is per-leaf margin (variant 72) (variant 171) (variant 270) (variant 369) (variant 468) (variant 567) (variant 666)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "explain set_readout.png (variant 73) (variant 172) (variant 271) (variant 370) (variant 469) (variant 568) (variant 667)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "explain experiment4 (variant 74) (variant 173) (variant 272) (variant 371) (variant 470) (variant 569) (variant 668)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "how to quantized restart (variant 75) (variant 174) (variant 273) (variant 372) (variant 471) (variant 570) (variant 669)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "how do i deflation (variant 76) (variant 175) (variant 274) (variant 373) (variant 472) (variant 571) (variant 670)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how to set_readout.png (variant 77) (variant 176) (variant 275) (variant 374) (variant 473) (variant 572) (variant 671)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "what is experiment3 (variant 78) (variant 177) (variant 276) (variant 375) (variant 474) (variant 573) (variant 672)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "tell me about deflation (variant 79) (variant 178) (variant 277) (variant 376) (variant 475) (variant 574) (variant 673)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how to adaptive probe (variant 80) (variant 179) (variant 278) (variant 377) (variant 476) (variant 575) (variant 674)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "tell me about experiment3 (variant 81) (variant 180) (variant 279) (variant 378) (variant 477) (variant 576) (variant 675)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "tell me about quantized restart (variant 82) (variant 181) (variant 280) (variant 379) (variant 478) (variant 577) (variant 676)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "tell me about experiment4 (variant 83) (variant 182) (variant 281) (variant 380) (variant 479) (variant 578) (variant 677)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "how to experiment3 (variant 84) (variant 183) (variant 282) (variant 381) (variant 480) (variant 579) (variant 678)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "what is set_readout.png (variant 85) (variant 184) (variant 283) (variant 382) (variant 481) (variant 580) (variant 679)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "explain final_fixes.png (variant 86) (variant 185) (variant 284) (variant 383) (variant 482) (variant 581) (variant 680)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "explain quantized restart (variant 87) (variant 186) (variant 285) (variant 384) (variant 483) (variant 582) (variant 681)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "how to deflation (variant 88) (variant 187) (variant 286) (variant 385) (variant 484) (variant 583) (variant 682)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "tell me about LSH (variant 89) (variant 188) (variant 287) (variant 386) (variant 485) (variant 584) (variant 683)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "explain per-leaf margin (variant 90) (variant 189) (variant 288) (variant 387) (variant 486) (variant 585) (variant 684)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "tell me about set_readout.png (variant 91) (variant 190) (variant 289) (variant 388) (variant 487) (variant 586) (variant 685)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "how to final_fixes.png (variant 92) (variant 191) (variant 290) (variant 389) (variant 488) (variant 587) (variant 686)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "what is experiment4 (variant 93) (variant 192) (variant 291) (variant 390) (variant 489) (variant 588) (variant 687)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "explain adaptive probe (variant 94) (variant 193) (variant 292) (variant 391) (variant 490) (variant 589) (variant 688)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "how do i orthogonal ids (variant 95) (variant 194) (variant 293) (variant 392) (variant 491) (variant 590) (variant 689)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i set_readout.png (variant 96) (variant 195) (variant 294) (variant 393) (variant 492) (variant 591) (variant 690)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "how to LSH (variant 97) (variant 196) (variant 295) (variant 394) (variant 493) (variant 592) (variant 691)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "what is adaptive probe (variant 98) (variant 197) (variant 296) (variant 395) (variant 494) (variant 593) (variant 692)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "hello! (variant 0) (variant 99) (variant 198) (variant 297) (variant 396) (variant 495) (variant 594) (variant 693)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Hello (variant 1) (variant 100) (variant 199) (variant 298) (variant 397) (variant 496) (variant 595) (variant 694)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hi (variant 2) (variant 101) (variant 200) (variant 299) (variant 398) (variant 497) (variant 596) (variant 695)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hi! (variant 3) (variant 102) (variant 201) (variant 300) (variant 399) (variant 498) (variant 597) (variant 696)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Hey (variant 4) (variant 103) (variant 202) (variant 301) (variant 400) (variant 499) (variant 598) (variant 697)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hey! (variant 5) (variant 104) (variant 203) (variant 302) (variant 401) (variant 500) (variant 599) (variant 698)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good morning (variant 6) (variant 105) (variant 204) (variant 303) (variant 402) (variant 501) (variant 600) (variant 699)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good morning! (variant 7) (variant 106) (variant 205) (variant 304) (variant 403) (variant 502) (variant 601) (variant 700)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good afternoon! (variant 8) (variant 107) (variant 206) (variant 305) (variant 404) (variant 503) (variant 602) (variant 701)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Good afternoon (variant 9) (variant 108) (variant 207) (variant 306) (variant 405) (variant 504) (variant 603) (variant 702)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "yo (variant 10) (variant 109) (variant 208) (variant 307) (variant 406) (variant 505) (variant 604) (variant 703)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "yo! (variant 11) (variant 110) (variant 209) (variant 308) (variant 407) (variant 506) (variant 605) (variant 704)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "howdy! (variant 12) (variant 111) (variant 210) (variant 309) (variant 408) (variant 507) (variant 606) (variant 705)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "howdy (variant 13) (variant 112) (variant 211) (variant 310) (variant 409) (variant 508) (variant 607) (variant 706)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "can you run experiment3 (variant 14) (variant 113) (variant 212) (variant 311) (variant 410) (variant 509) (variant 608) (variant 707)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment3 (variant 15) (variant 114) (variant 213) (variant 312) (variant 411) (variant 510) (variant 609) (variant 708)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment3 please (variant 16) (variant 115) (variant 214) (variant 313) (variant 412) (variant 511) (variant 610) (variant 709)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you run experiment 3 (variant 17) (variant 116) (variant 215) (variant 314) (variant 413) (variant 512) (variant 611) (variant 710)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment 3 please (variant 18) (variant 117) (variant 216) (variant 315) (variant 414) (variant 513) (variant 612) (variant 711)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment 3 (variant 19) (variant 118) (variant 217) (variant 316) (variant 415) (variant 514) (variant 613) (variant 712)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "execute experiment3 please (variant 20) (variant 119) (variant 218) (variant 317) (variant 416) (variant 515) (variant 614) (variant 713)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you execute experiment3 (variant 21) (variant 120) (variant 219) (variant 318) (variant 417) (variant 516) (variant 615) (variant 714)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "execute experiment3 (variant 22) (variant 121) (variant 220) (variant 319) (variant 418) (variant 517) (variant 616) (variant 715)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "start panel tests (variant 23) (variant 122) (variant 221) (variant 320) (variant 419) (variant 518) (variant 617) (variant 716)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run the panels (variant 24) (variant 123) (variant 222) (variant 321) (variant 420) (variant 519) (variant 618) (variant 717)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you launch experiment3 (variant 25) (variant 124) (variant 223) (variant 322) (variant 421) (variant 520) (variant 619) (variant 718)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "launch experiment3 (variant 26) (variant 125) (variant 224) (variant 323) (variant 422) (variant 521) (variant 620) (variant 719)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "launch experiment3 please (variant 27) (variant 126) (variant 225) (variant 324) (variant 423) (variant 522) (variant 621) (variant 720)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "open final image (variant 28) (variant 127) (variant 226) (variant 325) (variant 424) (variant 523) (variant 622) (variant 721)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "show final_fixes.png (variant 29) (variant 128) (variant 227) (variant 326) (variant 425) (variant 524) (variant 623) (variant 722)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "open set readout (variant 30) (variant 129) (variant 228) (variant 327) (variant 426) (variant 525) (variant 624) (variant 723)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "display set_readout.png (variant 31) (variant 130) (variant 229) (variant 328) (variant 427) (variant 526) (variant 625) (variant 724)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "how do i run the experiments (variant 32) (variant 131) (variant 230) (variant 329) (variant 428) (variant 527) (variant 626) (variant 725)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "how to run experiment3 (variant 33) (variant 132) (variant 231) (variant 330) (variant 429) (variant 528) (variant 627) (variant 726)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "what command runs experiment4 (variant 34) (variant 133) (variant 232) (variant 331) (variant 430) (variant 529) (variant 628) (variant 727)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "how do I generate the plots (variant 35) (variant 134) (variant 233) (variant 332) (variant 431) (variant 530) (variant 629) (variant 728)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "what does panel1 test (variant 36) (variant 135) (variant 234) (variant 333) (variant 432) (variant 531) (variant 630) (variant 729)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "explain panel 2 (variant 37) (variant 136) (variant 235) (variant 334) (variant 433) (variant 532) (variant 631) (variant 730)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "what is panel3 about (variant 38) (variant 137) (variant 236) (variant 335) (variant 434) (variant 533) (variant 632) (variant 731)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "describe the entry snap experiment (variant 39) (variant 138) (variant 237) (variant 336) (variant 435) (variant 534) (variant 633) (variant 732)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "what is LSH (variant 40) (variant 139) (variant 238) (variant 337) (variant 436) (variant 535) (variant 634) (variant 733)",
+    "LSH (Locality-Sensitive Hashing) hashes similar vectors into the same buckets for fast approximate nearest neighbor."
+  ],
+  [
+    "explain LSH briefly (variant 41) (variant 140) (variant 239) (variant 338) (variant 437) (variant 536) (variant 635) (variant 734)",
+    "LSH uses random hyperplanes to map high-dim vectors to bucket indices where similar vectors collide."
+  ],
+  [
+    "how does deflation work (variant 42) (variant 141) (variant 240) (variant 339) (variant 438) (variant 537) (variant 636) (variant 735)",
+    "Deflation retrieves a top candidate, verifies it, subtracts its trace from the signal, and repeats."
+  ],
+  [
+    "what is quantized restart (variant 43) (variant 142) (variant 241) (variant 340) (variant 439) (variant 538) (variant 637) (variant 736)",
+    "Quantized restart snaps the noisy hop output to the nearest known item before the next hop."
+  ],
+  [
+    "thanks (variant 44) (variant 143) (variant 242) (variant 341) (variant 440) (variant 539) (variant 638) (variant 737)",
+    "You're welcome!"
+  ],
+  [
+    "thank you (variant 45) (variant 144) (variant 243) (variant 342) (variant 441) (variant 540) (variant 639) (variant 738)",
+    "You're welcome!"
+  ],
+  [
+    "thx (variant 46) (variant 145) (variant 244) (variant 343) (variant 442) (variant 541) (variant 640) (variant 739)",
+    "You're welcome!"
+  ],
+  [
+    "cheers (variant 47) (variant 146) (variant 245) (variant 344) (variant 443) (variant 542) (variant 641) (variant 740)",
+    "You're welcome!"
+  ],
+  [
+    "bye (variant 48) (variant 147) (variant 246) (variant 345) (variant 444) (variant 543) (variant 642) (variant 741)",
+    "Goodbye!"
+  ],
+  [
+    "goodbye (variant 49) (variant 148) (variant 247) (variant 346) (variant 445) (variant 544) (variant 643) (variant 742)",
+    "Goodbye!"
+  ],
+  [
+    "see ya (variant 50) (variant 149) (variant 248) (variant 347) (variant 446) (variant 545) (variant 644) (variant 743)",
+    "Goodbye!"
+  ],
+  [
+    "how do i LSH (variant 51) (variant 150) (variant 249) (variant 348) (variant 447) (variant 546) (variant 645) (variant 744)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "how to per-leaf margin (variant 52) (variant 151) (variant 250) (variant 349) (variant 448) (variant 547) (variant 646) (variant 745)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "how do i experiment3 (variant 53) (variant 152) (variant 251) (variant 350) (variant 449) (variant 548) (variant 647) (variant 746)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "explain LSH (variant 54) (variant 153) (variant 252) (variant 351) (variant 450) (variant 549) (variant 648) (variant 747)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "tell me about final_fixes.png (variant 55) (variant 154) (variant 253) (variant 352) (variant 451) (variant 550) (variant 649) (variant 748)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "tell me about orthogonal ids (variant 56) (variant 155) (variant 254) (variant 353) (variant 452) (variant 551) (variant 650) (variant 749)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i quantized restart (variant 57) (variant 156) (variant 255) (variant 354) (variant 453) (variant 552) (variant 651) (variant 750)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "what is orthogonal ids (variant 58) (variant 157) (variant 256) (variant 355) (variant 454) (variant 553) (variant 652) (variant 751)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "what is deflation (variant 59) (variant 158) (variant 257) (variant 356) (variant 455) (variant 554) (variant 653) (variant 752)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how do i adaptive probe (variant 60) (variant 159) (variant 258) (variant 357) (variant 456) (variant 555) (variant 654) (variant 753)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "explain experiment3 (variant 61) (variant 160) (variant 259) (variant 358) (variant 457) (variant 556) (variant 655) (variant 754)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "explain deflation (variant 62) (variant 161) (variant 260) (variant 359) (variant 458) (variant 557) (variant 656) (variant 755)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "tell me about adaptive probe (variant 63) (variant 162) (variant 261) (variant 360) (variant 459) (variant 558) (variant 657) (variant 756)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "how do i final_fixes.png (variant 64) (variant 163) (variant 262) (variant 361) (variant 460) (variant 559) (variant 658) (variant 757)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "how to orthogonal ids (variant 65) (variant 164) (variant 263) (variant 362) (variant 461) (variant 560) (variant 659) (variant 758)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i experiment4 (variant 66) (variant 165) (variant 264) (variant 363) (variant 462) (variant 561) (variant 660) (variant 759)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "tell me about per-leaf margin (variant 67) (variant 166) (variant 265) (variant 364) (variant 463) (variant 562) (variant 661) (variant 760)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "explain orthogonal ids (variant 68) (variant 167) (variant 266) (variant 365) (variant 464) (variant 563) (variant 662) (variant 761)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i per-leaf margin (variant 69) (variant 168) (variant 267) (variant 366) (variant 465) (variant 564) (variant 663) (variant 762)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "what is final_fixes.png (variant 70) (variant 169) (variant 268) (variant 367) (variant 466) (variant 565) (variant 664) (variant 763)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "how to experiment4 (variant 71) (variant 170) (variant 269) (variant 368) (variant 467) (variant 566) (variant 665) (variant 764)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "what is per-leaf margin (variant 72) (variant 171) (variant 270) (variant 369) (variant 468) (variant 567) (variant 666) (variant 765)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "explain set_readout.png (variant 73) (variant 172) (variant 271) (variant 370) (variant 469) (variant 568) (variant 667) (variant 766)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "explain experiment4 (variant 74) (variant 173) (variant 272) (variant 371) (variant 470) (variant 569) (variant 668) (variant 767)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "how to quantized restart (variant 75) (variant 174) (variant 273) (variant 372) (variant 471) (variant 570) (variant 669) (variant 768)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "how do i deflation (variant 76) (variant 175) (variant 274) (variant 373) (variant 472) (variant 571) (variant 670) (variant 769)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how to set_readout.png (variant 77) (variant 176) (variant 275) (variant 374) (variant 473) (variant 572) (variant 671) (variant 770)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "what is experiment3 (variant 78) (variant 177) (variant 276) (variant 375) (variant 474) (variant 573) (variant 672) (variant 771)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "tell me about deflation (variant 79) (variant 178) (variant 277) (variant 376) (variant 475) (variant 574) (variant 673) (variant 772)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how to adaptive probe (variant 80) (variant 179) (variant 278) (variant 377) (variant 476) (variant 575) (variant 674) (variant 773)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "tell me about experiment3 (variant 81) (variant 180) (variant 279) (variant 378) (variant 477) (variant 576) (variant 675) (variant 774)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "tell me about quantized restart (variant 82) (variant 181) (variant 280) (variant 379) (variant 478) (variant 577) (variant 676) (variant 775)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "tell me about experiment4 (variant 83) (variant 182) (variant 281) (variant 380) (variant 479) (variant 578) (variant 677) (variant 776)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "how to experiment3 (variant 84) (variant 183) (variant 282) (variant 381) (variant 480) (variant 579) (variant 678) (variant 777)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "what is set_readout.png (variant 85) (variant 184) (variant 283) (variant 382) (variant 481) (variant 580) (variant 679) (variant 778)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "explain final_fixes.png (variant 86) (variant 185) (variant 284) (variant 383) (variant 482) (variant 581) (variant 680) (variant 779)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "explain quantized restart (variant 87) (variant 186) (variant 285) (variant 384) (variant 483) (variant 582) (variant 681) (variant 780)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "how to deflation (variant 88) (variant 187) (variant 286) (variant 385) (variant 484) (variant 583) (variant 682) (variant 781)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "tell me about LSH (variant 89) (variant 188) (variant 287) (variant 386) (variant 485) (variant 584) (variant 683) (variant 782)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "explain per-leaf margin (variant 90) (variant 189) (variant 288) (variant 387) (variant 486) (variant 585) (variant 684) (variant 783)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "tell me about set_readout.png (variant 91) (variant 190) (variant 289) (variant 388) (variant 487) (variant 586) (variant 685) (variant 784)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "how to final_fixes.png (variant 92) (variant 191) (variant 290) (variant 389) (variant 488) (variant 587) (variant 686) (variant 785)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "what is experiment4 (variant 93) (variant 192) (variant 291) (variant 390) (variant 489) (variant 588) (variant 687) (variant 786)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "explain adaptive probe (variant 94) (variant 193) (variant 292) (variant 391) (variant 490) (variant 589) (variant 688) (variant 787)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "how do i orthogonal ids (variant 95) (variant 194) (variant 293) (variant 392) (variant 491) (variant 590) (variant 689) (variant 788)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i set_readout.png (variant 96) (variant 195) (variant 294) (variant 393) (variant 492) (variant 591) (variant 690) (variant 789)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "how to LSH (variant 97) (variant 196) (variant 295) (variant 394) (variant 493) (variant 592) (variant 691) (variant 790)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "what is adaptive probe (variant 98) (variant 197) (variant 296) (variant 395) (variant 494) (variant 593) (variant 692) (variant 791)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "hello! (variant 0) (variant 99) (variant 198) (variant 297) (variant 396) (variant 495) (variant 594) (variant 693) (variant 792)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Hello (variant 1) (variant 100) (variant 199) (variant 298) (variant 397) (variant 496) (variant 595) (variant 694) (variant 793)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hi (variant 2) (variant 101) (variant 200) (variant 299) (variant 398) (variant 497) (variant 596) (variant 695) (variant 794)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hi! (variant 3) (variant 102) (variant 201) (variant 300) (variant 399) (variant 498) (variant 597) (variant 696) (variant 795)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Hey (variant 4) (variant 103) (variant 202) (variant 301) (variant 400) (variant 499) (variant 598) (variant 697) (variant 796)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hey! (variant 5) (variant 104) (variant 203) (variant 302) (variant 401) (variant 500) (variant 599) (variant 698) (variant 797)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good morning (variant 6) (variant 105) (variant 204) (variant 303) (variant 402) (variant 501) (variant 600) (variant 699) (variant 798)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good morning! (variant 7) (variant 106) (variant 205) (variant 304) (variant 403) (variant 502) (variant 601) (variant 700) (variant 799)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good afternoon! (variant 8) (variant 107) (variant 206) (variant 305) (variant 404) (variant 503) (variant 602) (variant 701) (variant 800)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Good afternoon (variant 9) (variant 108) (variant 207) (variant 306) (variant 405) (variant 504) (variant 603) (variant 702) (variant 801)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "yo (variant 10) (variant 109) (variant 208) (variant 307) (variant 406) (variant 505) (variant 604) (variant 703) (variant 802)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "yo! (variant 11) (variant 110) (variant 209) (variant 308) (variant 407) (variant 506) (variant 605) (variant 704) (variant 803)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "howdy! (variant 12) (variant 111) (variant 210) (variant 309) (variant 408) (variant 507) (variant 606) (variant 705) (variant 804)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "howdy (variant 13) (variant 112) (variant 211) (variant 310) (variant 409) (variant 508) (variant 607) (variant 706) (variant 805)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "can you run experiment3 (variant 14) (variant 113) (variant 212) (variant 311) (variant 410) (variant 509) (variant 608) (variant 707) (variant 806)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment3 (variant 15) (variant 114) (variant 213) (variant 312) (variant 411) (variant 510) (variant 609) (variant 708) (variant 807)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment3 please (variant 16) (variant 115) (variant 214) (variant 313) (variant 412) (variant 511) (variant 610) (variant 709) (variant 808)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you run experiment 3 (variant 17) (variant 116) (variant 215) (variant 314) (variant 413) (variant 512) (variant 611) (variant 710) (variant 809)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment 3 please (variant 18) (variant 117) (variant 216) (variant 315) (variant 414) (variant 513) (variant 612) (variant 711) (variant 810)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run experiment 3 (variant 19) (variant 118) (variant 217) (variant 316) (variant 415) (variant 514) (variant 613) (variant 712) (variant 811)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "execute experiment3 please (variant 20) (variant 119) (variant 218) (variant 317) (variant 416) (variant 515) (variant 614) (variant 713) (variant 812)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you execute experiment3 (variant 21) (variant 120) (variant 219) (variant 318) (variant 417) (variant 516) (variant 615) (variant 714) (variant 813)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "execute experiment3 (variant 22) (variant 121) (variant 220) (variant 319) (variant 418) (variant 517) (variant 616) (variant 715) (variant 814)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "start panel tests (variant 23) (variant 122) (variant 221) (variant 320) (variant 419) (variant 518) (variant 617) (variant 716) (variant 815)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "run the panels (variant 24) (variant 123) (variant 222) (variant 321) (variant 420) (variant 519) (variant 618) (variant 717) (variant 816)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "can you launch experiment3 (variant 25) (variant 124) (variant 223) (variant 322) (variant 421) (variant 520) (variant 619) (variant 718) (variant 817)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "launch experiment3 (variant 26) (variant 125) (variant 224) (variant 323) (variant 422) (variant 521) (variant 620) (variant 719) (variant 818)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "launch experiment3 please (variant 27) (variant 126) (variant 225) (variant 324) (variant 423) (variant 522) (variant 621) (variant 720) (variant 819)",
+    "To run experiment3: python experiment3.py — it will save final_fixes.png."
+  ],
+  [
+    "open final image (variant 28) (variant 127) (variant 226) (variant 325) (variant 424) (variant 523) (variant 622) (variant 721) (variant 820)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "show final_fixes.png (variant 29) (variant 128) (variant 227) (variant 326) (variant 425) (variant 524) (variant 623) (variant 722) (variant 821)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "open set readout (variant 30) (variant 129) (variant 228) (variant 327) (variant 426) (variant 525) (variant 624) (variant 723) (variant 822)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "display set_readout.png (variant 31) (variant 130) (variant 229) (variant 328) (variant 427) (variant 526) (variant 625) (variant 724) (variant 823)",
+    "Use python chat.py open final or open set to view the images."
+  ],
+  [
+    "how do i run the experiments (variant 32) (variant 131) (variant 230) (variant 329) (variant 428) (variant 527) (variant 626) (variant 725) (variant 824)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "how to run experiment3 (variant 33) (variant 132) (variant 231) (variant 330) (variant 429) (variant 528) (variant 627) (variant 726) (variant 825)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "what command runs experiment4 (variant 34) (variant 133) (variant 232) (variant 331) (variant 430) (variant 529) (variant 628) (variant 727) (variant 826)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "how do I generate the plots (variant 35) (variant 134) (variant 233) (variant 332) (variant 431) (variant 530) (variant 629) (variant 728) (variant 827)",
+    "Run `python experiment3.py` or `python experiment4.py`. Use `chat.py` to control it interactively."
+  ],
+  [
+    "what does panel1 test (variant 36) (variant 135) (variant 234) (variant 333) (variant 432) (variant 531) (variant 630) (variant 729) (variant 828)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "explain panel 2 (variant 37) (variant 136) (variant 235) (variant 334) (variant 433) (variant 532) (variant 631) (variant 730) (variant 829)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "what is panel3 about (variant 38) (variant 137) (variant 236) (variant 335) (variant 434) (variant 533) (variant 632) (variant 731) (variant 830)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "describe the entry snap experiment (variant 39) (variant 138) (variant 237) (variant 336) (variant 435) (variant 534) (variant 633) (variant 732) (variant 831)",
+    "Panel 1 tests correlated entities; Panel 2 tests chain depth; Panel 3 measures entry-snap latency with ANN."
+  ],
+  [
+    "what is LSH (variant 40) (variant 139) (variant 238) (variant 337) (variant 436) (variant 535) (variant 634) (variant 733) (variant 832)",
+    "LSH (Locality-Sensitive Hashing) hashes similar vectors into the same buckets for fast approximate nearest neighbor."
+  ],
+  [
+    "explain LSH briefly (variant 41) (variant 140) (variant 239) (variant 338) (variant 437) (variant 536) (variant 635) (variant 734) (variant 833)",
+    "LSH uses random hyperplanes to map high-dim vectors to bucket indices where similar vectors collide."
+  ],
+  [
+    "how does deflation work (variant 42) (variant 141) (variant 240) (variant 339) (variant 438) (variant 537) (variant 636) (variant 735) (variant 834)",
+    "Deflation retrieves a top candidate, verifies it, subtracts its trace from the signal, and repeats."
+  ],
+  [
+    "what is quantized restart (variant 43) (variant 142) (variant 241) (variant 340) (variant 439) (variant 538) (variant 637) (variant 736) (variant 835)",
+    "Quantized restart snaps the noisy hop output to the nearest known item before the next hop."
+  ],
+  [
+    "thanks (variant 44) (variant 143) (variant 242) (variant 341) (variant 440) (variant 539) (variant 638) (variant 737) (variant 836)",
+    "You're welcome!"
+  ],
+  [
+    "thank you (variant 45) (variant 144) (variant 243) (variant 342) (variant 441) (variant 540) (variant 639) (variant 738) (variant 837)",
+    "You're welcome!"
+  ],
+  [
+    "thx (variant 46) (variant 145) (variant 244) (variant 343) (variant 442) (variant 541) (variant 640) (variant 739) (variant 838)",
+    "You're welcome!"
+  ],
+  [
+    "cheers (variant 47) (variant 146) (variant 245) (variant 344) (variant 443) (variant 542) (variant 641) (variant 740) (variant 839)",
+    "You're welcome!"
+  ],
+  [
+    "bye (variant 48) (variant 147) (variant 246) (variant 345) (variant 444) (variant 543) (variant 642) (variant 741) (variant 840)",
+    "Goodbye!"
+  ],
+  [
+    "goodbye (variant 49) (variant 148) (variant 247) (variant 346) (variant 445) (variant 544) (variant 643) (variant 742) (variant 841)",
+    "Goodbye!"
+  ],
+  [
+    "see ya (variant 50) (variant 149) (variant 248) (variant 347) (variant 446) (variant 545) (variant 644) (variant 743) (variant 842)",
+    "Goodbye!"
+  ],
+  [
+    "how do i LSH (variant 51) (variant 150) (variant 249) (variant 348) (variant 447) (variant 546) (variant 645) (variant 744) (variant 843)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "how to per-leaf margin (variant 52) (variant 151) (variant 250) (variant 349) (variant 448) (variant 547) (variant 646) (variant 745) (variant 844)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "how do i experiment3 (variant 53) (variant 152) (variant 251) (variant 350) (variant 449) (variant 548) (variant 647) (variant 746) (variant 845)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "explain LSH (variant 54) (variant 153) (variant 252) (variant 351) (variant 450) (variant 549) (variant 648) (variant 747) (variant 846)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "tell me about final_fixes.png (variant 55) (variant 154) (variant 253) (variant 352) (variant 451) (variant 550) (variant 649) (variant 748) (variant 847)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "tell me about orthogonal ids (variant 56) (variant 155) (variant 254) (variant 353) (variant 452) (variant 551) (variant 650) (variant 749) (variant 848)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i quantized restart (variant 57) (variant 156) (variant 255) (variant 354) (variant 453) (variant 552) (variant 651) (variant 750) (variant 849)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "what is orthogonal ids (variant 58) (variant 157) (variant 256) (variant 355) (variant 454) (variant 553) (variant 652) (variant 751) (variant 850)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "what is deflation (variant 59) (variant 158) (variant 257) (variant 356) (variant 455) (variant 554) (variant 653) (variant 752) (variant 851)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how do i adaptive probe (variant 60) (variant 159) (variant 258) (variant 357) (variant 456) (variant 555) (variant 654) (variant 753) (variant 852)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "explain experiment3 (variant 61) (variant 160) (variant 259) (variant 358) (variant 457) (variant 556) (variant 655) (variant 754) (variant 853)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "explain deflation (variant 62) (variant 161) (variant 260) (variant 359) (variant 458) (variant 557) (variant 656) (variant 755) (variant 854)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "tell me about adaptive probe (variant 63) (variant 162) (variant 261) (variant 360) (variant 459) (variant 558) (variant 657) (variant 756) (variant 855)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "how do i final_fixes.png (variant 64) (variant 163) (variant 262) (variant 361) (variant 460) (variant 559) (variant 658) (variant 757) (variant 856)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "how to orthogonal ids (variant 65) (variant 164) (variant 263) (variant 362) (variant 461) (variant 560) (variant 659) (variant 758) (variant 857)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i experiment4 (variant 66) (variant 165) (variant 264) (variant 363) (variant 462) (variant 561) (variant 660) (variant 759) (variant 858)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "tell me about per-leaf margin (variant 67) (variant 166) (variant 265) (variant 364) (variant 463) (variant 562) (variant 661) (variant 760) (variant 859)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "explain orthogonal ids (variant 68) (variant 167) (variant 266) (variant 365) (variant 464) (variant 563) (variant 662) (variant 761) (variant 860)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i per-leaf margin (variant 69) (variant 168) (variant 267) (variant 366) (variant 465) (variant 564) (variant 663) (variant 762) (variant 861)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "what is final_fixes.png (variant 70) (variant 169) (variant 268) (variant 367) (variant 466) (variant 565) (variant 664) (variant 763) (variant 862)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "how to experiment4 (variant 71) (variant 170) (variant 269) (variant 368) (variant 467) (variant 566) (variant 665) (variant 764) (variant 863)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "what is per-leaf margin (variant 72) (variant 171) (variant 270) (variant 369) (variant 468) (variant 567) (variant 666) (variant 765) (variant 864)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "explain set_readout.png (variant 73) (variant 172) (variant 271) (variant 370) (variant 469) (variant 568) (variant 667) (variant 766) (variant 865)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "explain experiment4 (variant 74) (variant 173) (variant 272) (variant 371) (variant 470) (variant 569) (variant 668) (variant 767) (variant 866)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "how to quantized restart (variant 75) (variant 174) (variant 273) (variant 372) (variant 471) (variant 570) (variant 669) (variant 768) (variant 867)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "how do i deflation (variant 76) (variant 175) (variant 274) (variant 373) (variant 472) (variant 571) (variant 670) (variant 769) (variant 868)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how to set_readout.png (variant 77) (variant 176) (variant 275) (variant 374) (variant 473) (variant 572) (variant 671) (variant 770) (variant 869)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "what is experiment3 (variant 78) (variant 177) (variant 276) (variant 375) (variant 474) (variant 573) (variant 672) (variant 771) (variant 870)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "tell me about deflation (variant 79) (variant 178) (variant 277) (variant 376) (variant 475) (variant 574) (variant 673) (variant 772) (variant 871)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "how to adaptive probe (variant 80) (variant 179) (variant 278) (variant 377) (variant 476) (variant 575) (variant 674) (variant 773) (variant 872)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "tell me about experiment3 (variant 81) (variant 180) (variant 279) (variant 378) (variant 477) (variant 576) (variant 675) (variant 774) (variant 873)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "tell me about quantized restart (variant 82) (variant 181) (variant 280) (variant 379) (variant 478) (variant 577) (variant 676) (variant 775) (variant 874)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "tell me about experiment4 (variant 83) (variant 182) (variant 281) (variant 380) (variant 479) (variant 578) (variant 677) (variant 776) (variant 875)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "how to experiment3 (variant 84) (variant 183) (variant 282) (variant 381) (variant 480) (variant 579) (variant 678) (variant 777) (variant 876)",
+    "Run python experiment3.py to generate the three panels and save final_fixes.png."
+  ],
+  [
+    "what is set_readout.png (variant 85) (variant 184) (variant 283) (variant 382) (variant 481) (variant 580) (variant 679) (variant 778) (variant 877)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "explain final_fixes.png (variant 86) (variant 185) (variant 284) (variant 383) (variant 482) (variant 581) (variant 680) (variant 779) (variant 878)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "explain quantized restart (variant 87) (variant 186) (variant 285) (variant 384) (variant 483) (variant 582) (variant 681) (variant 780) (variant 879)",
+    "Snap the noisy vector to the nearest known vector before the next hop."
+  ],
+  [
+    "how to deflation (variant 88) (variant 187) (variant 286) (variant 385) (variant 484) (variant 583) (variant 682) (variant 781) (variant 880)",
+    "Deflation iteratively subtracts verified candidates to recover set members."
+  ],
+  [
+    "tell me about LSH (variant 89) (variant 188) (variant 287) (variant 386) (variant 485) (variant 584) (variant 683) (variant 782) (variant 881)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "explain per-leaf margin (variant 90) (variant 189) (variant 288) (variant 387) (variant 486) (variant 585) (variant 684) (variant 783) (variant 882)",
+    "Per-leaf margins are calibrated thresholds stored or computed per bucket."
+  ],
+  [
+    "tell me about set_readout.png (variant 91) (variant 190) (variant 289) (variant 388) (variant 487) (variant 586) (variant 685) (variant 784) (variant 883)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "how to final_fixes.png (variant 92) (variant 191) (variant 290) (variant 389) (variant 488) (variant 587) (variant 686) (variant 785) (variant 884)",
+    "final_fixes.png contains the three-panel summary plots."
+  ],
+  [
+    "what is experiment4 (variant 93) (variant 192) (variant 291) (variant 390) (variant 489) (variant 588) (variant 687) (variant 786) (variant 885)",
+    "Run python experiment4.py to generate set_readout.png showing set readout methods."
+  ],
+  [
+    "explain adaptive probe (variant 94) (variant 193) (variant 292) (variant 391) (variant 490) (variant 589) (variant 688) (variant 787) (variant 886)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "how do i orthogonal ids (variant 95) (variant 194) (variant 293) (variant 392) (variant 491) (variant 590) (variant 689) (variant 788) (variant 887)",
+    "Orthogonal IDs are random vectors orthogonalized to reduce cross-talk."
+  ],
+  [
+    "how do i set_readout.png (variant 96) (variant 195) (variant 294) (variant 393) (variant 492) (variant 591) (variant 690) (variant 789) (variant 888)",
+    "set_readout.png shows set readout accuracy across N."
+  ],
+  [
+    "how to LSH (variant 97) (variant 196) (variant 295) (variant 394) (variant 493) (variant 592) (variant 691) (variant 790) (variant 889)",
+    "Locality-sensitive hashing groups similar vectors into buckets for ANN lookups."
+  ],
+  [
+    "what is adaptive probe (variant 98) (variant 197) (variant 296) (variant 395) (variant 494) (variant 593) (variant 692) (variant 791) (variant 890)",
+    "Adaptive probe distributes a limited probe budget across LSH tables per query."
+  ],
+  [
+    "hello! (variant 0) (variant 99) (variant 198) (variant 297) (variant 396) (variant 495) (variant 594) (variant 693) (variant 792) (variant 891)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Hello (variant 1) (variant 100) (variant 199) (variant 298) (variant 397) (variant 496) (variant 595) (variant 694) (variant 793) (variant 892)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hi (variant 2) (variant 101) (variant 200) (variant 299) (variant 398) (variant 497) (variant 596) (variant 695) (variant 794) (variant 893)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hi! (variant 3) (variant 102) (variant 201) (variant 300) (variant 399) (variant 498) (variant 597) (variant 696) (variant 795) (variant 894)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Hey (variant 4) (variant 103) (variant 202) (variant 301) (variant 400) (variant 499) (variant 598) (variant 697) (variant 796) (variant 895)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "hey! (variant 5) (variant 104) (variant 203) (variant 302) (variant 401) (variant 500) (variant 599) (variant 698) (variant 797) (variant 896)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good morning (variant 6) (variant 105) (variant 204) (variant 303) (variant 402) (variant 501) (variant 600) (variant 699) (variant 798) (variant 897)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good morning! (variant 7) (variant 106) (variant 205) (variant 304) (variant 403) (variant 502) (variant 601) (variant 700) (variant 799) (variant 898)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "good afternoon! (variant 8) (variant 107) (variant 206) (variant 305) (variant 404) (variant 503) (variant 602) (variant 701) (variant 800) (variant 899)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ],
+  [
+    "Good afternoon (variant 9) (variant 108) (variant 207) (variant 306) (variant 405) (variant 504) (variant 603) (variant 702) (variant 801) (variant 900)",
+    "Hi — I can run experiments, build indices, or open result images."
+  ]
+]
