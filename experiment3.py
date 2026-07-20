@@ -40,6 +40,26 @@ def rand_vecs(n):
     return rng.choice(np.array([-1, 1], dtype=np.int8), size=(n, D))
 
 
+def rand_orth_vecs(n):
+    """Generate n approximately orthogonal +/-1 vectors via Gram-Schmidt.
+    Returns int8 matrix shape (n, D)."""
+    # start from gaussian floats for stable orthogonalization
+    V = rng.normal(size=(n, D)).astype(np.float32)
+    for i in range(n):
+        v = V[i]
+        for j in range(i):
+            u = V[j]
+            proj = (v @ u) / (u @ u) if (u @ u) != 0 else 0.0
+            v = v - proj * u
+        norm = np.linalg.norm(v)
+        if norm == 0:
+            # fallback to fresh random vector
+            v = rng.normal(size=(D,)).astype(np.float32)
+            norm = np.linalg.norm(v)
+        V[i] = v / norm
+    return np.sign(V).astype(np.int8)
+
+
 def correlated_vecs(n, cluster_size=50, mutate=0.15):
     """Entities in clusters: each is its cluster prototype with `mutate`
     of the bits flipped -> within-cluster cosine ~ (1-2m)^2 ~ 0.49."""
@@ -100,7 +120,8 @@ def panel1():
         R1, R2 = rand_vecs(2)
         person_sem = correlated_vecs(n_pairs, mutate=m)
         animal_sem = correlated_vecs(n_pairs, mutate=m)
-        person_id, animal_id = rand_vecs(n_pairs), rand_vecs(n_pairs)
+        # use orthogonalized random IDs to keep IDs maximally different
+        person_id, animal_id = rand_orth_vecs(n_pairs), rand_orth_vecs(n_pairs)
         sounds = rand_vecs(n_sounds)
         animal_sound = rng.integers(0, n_sounds, size=n_pairs)
 
@@ -197,7 +218,7 @@ def panel3():
     D3 = 1024
     sizes = [10_000, 40_000, 160_000]
     n_queries = 100
-    T_TABLES, K_BITS, CONF_WINDOW, PROBES_PER_TABLE = 4, 9, 6, 16
+    T_TABLES, K_BITS, CONF_WINDOW, PROBES_TOTAL = 4, 9, 6, 32
     FALLBACK_SIM_MARGIN = 0.75   # accept if best_sim > margin * (1-2p)
     res = {}
 
@@ -230,27 +251,36 @@ def panel3():
             for v in q_vecs:
                 vf = v.astype(np.float32) / np.sqrt(D3)
                 best_sim = -np.inf
+                # distribute a global probe budget across tables adaptively
+                zt = None
+                probes_used = 0
                 for H, buckets in tables:
+                    if probes_used >= PROBES_TOTAL:
+                        break
                     z = H @ v.astype(np.float32)
                     base = (z > 0).astype(np.int64)
                     conf = np.argsort(np.abs(z))[:CONF_WINDOW]
+                    # per-table probe budget proportional to remaining budget
+                    remaining = PROBES_TOTAL - probes_used
+                    per_table_budget = max(1, remaining // (len(tables)))
                     probes = 0
                     done = False
                     for n_flip in range(0, 3):
                         for combo in combinations(conf, n_flip):
+                            if probes >= per_table_budget or probes_used >= PROBES_TOTAL:
+                                done = True
+                                break
                             b = base.copy()
                             for bit in combo:
                                 b[bit] ^= 1
                             ids = buckets.get(int(np.dot(b, weights)))
                             probes += 1
+                            probes_used += 1
                             if ids is not None and len(ids):
                                 sims = items_f[ids] @ vf
                                 s = float(np.max(sims))
                                 if s > best_sim:
                                     best_sim = s
-                            if probes >= PROBES_PER_TABLE:
-                                done = True
-                                break
                         if done:
                             break
                     if best_sim > accept_thresh:
