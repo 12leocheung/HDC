@@ -1,2 +1,9 @@
 __pycache__/
 *.pyc
+
+# Generated chatbot artifacts and experiment outputs
+chat_keys*.npy
+token_vectors.json
+chat_responses.json
+final_fixes.png
+set_readout.png
